@@ -1,12 +1,12 @@
 //global App object
-const translateApp = {};
+const quoteApp = {};
 
 //init function
-translateApp.init = function() {
+quoteApp.init = function() {
 
 };
 
 //document ready
 $(function() {
-  translateApp.init();
+  quoteApp.init();
 });
