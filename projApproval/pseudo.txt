@@ -1,7 +1,6 @@
 Info:
 ===========
-- Camel case for JS
-- Kebob case for HTML/CSS
+- Camel case for JS/HTML/CSS
 - Kanye API: kanye.rest
 - Donald Trump API: tronalddump.io
 
@@ -10,6 +9,8 @@ Pseudo Code:
 - Create name space to hold everything
 - app.author = null;
 - app.score = 0;
+- app.quoteArray = [];
+
 - app.init()
     - app.getQuote()
     - app.userInput()
@@ -20,13 +21,27 @@ Pseudo Code:
 - app.getQuote():
     - author = [Kanye, Trump]
     - app.author = randomly select between Kanye and Trump
+
+    - localQuote = undefined;
+    - boolean uniqueQuote = false;
+
     - if (Kanye)
         - AJAX call to kanye.rest
+        - store in localQuote 
     - else 
         - AJAX call to tronalddump.io
-    - call displayQuote()
+        - store in localQuote 
 
-- app.displayQuote():
+    - for each app.quoteArray
+        - check if our localQuote == app.quoteArray[index]
+            - uniqueQuote = false
+
+    - if (uniqueQuote) {
+        - push quote to app.quoteArray
+    }
+    - call displayQuote(localQuote)
+
+- app.displayQuote(localQuote):
     - display the quote dynamically in HTML
 
 - app.userInput():
@@ -38,7 +53,7 @@ Pseudo Code:
             - STRETCH: animate
         - else incorrect
             - display losing text
-    - display play again
+    - display play again/next button
 
 - app.playAgain()
     - app.score = 0;
