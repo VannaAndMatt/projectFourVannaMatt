@@ -1,0 +1,50 @@
+Info:
+===========
+- Camel case for JS
+- Kebob case for HTML/CSS
+- Kanye API: kanye.rest
+- Donald Trump API: tronalddump.io
+
+Pseudo Code:
+============
+- Create name space to hold everything
+- app.author = null;
+- app.score = 0;
+- app.init()
+    - app.getQuote()
+    - app.userInput()
+
+- Document-ready()
+    - app.init()
+    
+- app.getQuote():
+    - author = [Kanye, Trump]
+    - app.author = randomly select between Kanye and Trump
+    - if (Kanye)
+        - AJAX call to kanye.rest
+    - else 
+        - AJAX call to tronalddump.io
+    - call displayQuote()
+
+- app.displayQuote():
+    - display the quote dynamically in HTML
+
+- app.userInput():
+    - save which button user selects
+    - check it with app.author
+        - if correct
+            - app.score++
+            - display winning text
+            - STRETCH: animate
+        - else incorrect
+            - display losing text
+    - display play again
+
+- app.playAgain()
+    - app.score = 0;
+    - app.getQuote();
+
+
+    
+
+
