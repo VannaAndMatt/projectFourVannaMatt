@@ -10,7 +10,9 @@ myApp.usedQuotes = [];
 myApp.getQuote = function() {
   const author = ["Kanye", "Trump"];
   let runLoop = true;
+  let newQuote = "";
   while (runLoop) {
+    // console.log('hi in the while');
     myApp.author = author[Math.floor(Math.random() * 2)];
     // myApp.author = "Trump";
     console.log(myApp.author);
@@ -20,8 +22,8 @@ myApp.getQuote = function() {
         method: "GET",
         dataType: "json"
       }).then(function(result) {
-        const newQuote = result.quote;
-        // console.log(newQuote);
+        newQuote = result.quote;
+        console.log(newQuote);
       });
     } else {
       //using hackeryou proxy due to CORS error
@@ -35,11 +37,12 @@ myApp.getQuote = function() {
           useCache: false
         }
       }).then(function(result) {
-        const newQuote = result.value;
-        // console.log(newQuote);
+        newQuote = result.value;
+        console.log(newQuote);
       });
     } //end of ajax calls
     let uniqueQuote = true;
+    console.log('after if', newQuote);
     myApp.usedQuotes.forEach(function(item) {
       if (newQuote === myApp.usedQuotes[item]) {
         uniqueQuote = false;
@@ -50,7 +53,8 @@ myApp.getQuote = function() {
       runLoop = false;
     }
   } // end of while loop
-  myApp.displayQuote(newQuote);
+  // myApp.displayQuote(newQuote);
+  console.log('new quote is:', newQuote);
 
 }; //end of getQuote
 
