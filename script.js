@@ -7,16 +7,16 @@ myApp.score = 0;
 myApp.usedQuotes = [];
 
 //function to get Kanye, returns a promise
-myApp.getKanye = function () {
+myApp.getKanye = function() {
   return $.ajax({
     url: "https://api.kanye.rest",
     method: "GET",
     dataType: "json"
-  })
-}
+  });
+};
 
 //function to get Trump, returns a promise
-myApp.getTrump = function () {
+myApp.getTrump = function() {
   //using hackeryou proxy due to CORS error
   return $.ajax({
     url: "http://proxy.hackeryou.com",
@@ -27,12 +27,12 @@ myApp.getTrump = function () {
       xmlToJSON: false,
       useCache: false
     }
-  })
-}
+  });
+};
 
 //function to pick between Kanye and Trump
 myApp.getQuote = function() {
-  const author = ["Kanye", "Trump"];
+  const author = ["kanye", "trump"];
   // Randomly select between Kanye and Trump
   myApp.author = author[Math.floor(Math.random() * 2)];
   myApp.getPromise();
@@ -41,49 +41,72 @@ myApp.getQuote = function() {
 // function to get promises by AJAX calls
 myApp.getPromise = function() {
   let newPromise = null;
-  if (myApp.author === "Kanye") {
+  if (myApp.author === "kanye") {
     newPromise = myApp.getKanye();
   } else {
     newPromise = myApp.getTrump();
   }
   myApp.evalPromise(newPromise);
-}
+};
 
 // function to evaluate promise
 myApp.evalPromise = function(promise) {
-  $.when(promise)
-    .then((newQuoteObj) => {
-      // Promise was fullfilled so let's populate our newQuote
-      if (myApp.author === "Kanye") {
-        newQuote = newQuoteObj.quote;
-      } else {
-        newQuote = newQuoteObj.value;
+  $.when(promise).then(newQuoteObj => {
+    // Promise was fullfilled so let's populate our newQuote
+    if (myApp.author === "kanye") {
+      newQuote = newQuoteObj.quote;
+    } else {
+      newQuote = newQuoteObj.value;
+    }
+
+    let uniqueQuote = true;
+    myApp.usedQuotes.forEach(function(item) {
+      if (newQuote === myApp.usedQuotes[item]) {
+        uniqueQuote = false;
       }
+    });
 
-      let uniqueQuote = true;
-      myApp.usedQuotes.forEach(function(item) {
-        if (newQuote === myApp.usedQuotes[item]) {
-          uniqueQuote = false;
-        } 
-      });
+    if (uniqueQuote) {
+      myApp.usedQuotes.push(newQuote);
+      myApp.displayQuote(newQuote);
+    } else {
+      myApp.getPromise();
+    }
+  }); // end of .then()
+}; // end of evalPromise()
 
-      if (uniqueQuote) {
-        myApp.usedQuotes.push(newQuote)
-        myApp.displayQuote(newQuote);
-      } else {
-        myApp.getPromise();
-      }
-    }) // end of .then()
-} // end of evalPromise()
-
+//Dynamically add quote to html function
 myApp.displayQuote = function(fakeNews) {
-  $('h3').html(`${fakeNews}`)
-}
+  $("h3").html(`${fakeNews}`);
+};
+
+//function to map input to result function
+myApp.userInput = function() {
+  $(".guess").on("click", function() {
+    const selectedGuess = $(this).attr("id");
+    $(".guess").attr('disabled', 'disabled');
+    myApp.checkInput(selectedGuess);
+  });
+};
+
+//function to check if guess is correct
+myApp.checkInput = function(selectedGuess) {
+  if (selectedGuess === myApp.author) {
+    myApp.score += 10;
+  }
+  console.log(myApp.score);
+  myApp.displayScore();
+};
+
+//display score dynamically function
+myApp.displayScore = function() {
+  $(".currentScore").html(myApp.score);
+};
 
 //init function
 myApp.init = function() {
   myApp.getQuote();
-  // myApp.userInput();
+  myApp.userInput();
 };
 
 //document ready
