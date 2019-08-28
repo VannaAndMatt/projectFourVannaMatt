@@ -1,0 +1,4 @@
+.results {
+  @include flex(column);
+  background: tomato;
+}
