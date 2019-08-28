@@ -33,13 +33,9 @@ myApp.getTrump = function () {
 //function to pick between Kanye and Trump
 myApp.getQuote = function() {
   const author = ["Kanye", "Trump"];
-
   // Randomly select between Kanye and Trump
   myApp.author = author[Math.floor(Math.random() * 2)];
-  console.log(myApp.author);
-
   myApp.getPromise();
-
 }; //end of getQuote
 
 // function to get promises by AJAX calls
@@ -73,18 +69,19 @@ myApp.evalPromise = function(promise) {
 
       if (uniqueQuote) {
         myApp.usedQuotes.push(newQuote)
-        // myApp.displayQuote(newQuote);
-        
-        console.log("this is the final quote", newQuote);
+        myApp.displayQuote(newQuote);
       } else {
         myApp.getPromise();
       }
     }) // end of .then()
 } // end of evalPromise()
 
+myApp.displayQuote = function(fakeNews) {
+  $('h3').html(`${fakeNews}`)
+}
+
 //init function
 myApp.init = function() {
-  // console.log("hello");
   myApp.getQuote();
   // myApp.userInput();
 };
