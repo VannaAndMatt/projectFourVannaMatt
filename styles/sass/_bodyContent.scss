@@ -1,0 +1,14 @@
+.content {
+  @include flex(column);
+  background: lightcoral;
+}
+
+.quoteContainer {
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.userInput {
+  @include flex(row);
+}
