@@ -7,8 +7,12 @@
   width: 50%;
   text-align: center;
   border: 1px solid black;
+  margin-top: 40px;
 }
 
 .userInput {
-  @include flex(row);
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 40px;
 }
