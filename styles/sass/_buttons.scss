@@ -1,0 +1,11 @@
+.kanye {
+  color: $highlight;
+}
+
+.trump {
+  color: $secondary;
+}
+
+.nextQuestion {
+  @include flex(row);
+}

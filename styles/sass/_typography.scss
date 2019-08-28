@@ -2,20 +2,30 @@
 
 html {
   font-size: 62.5%;
+  font-family: $body;
 }
 
 h1 {
-  @include fontStyle (8rem, 10rem, white);
+  @include fontStyle(8rem, 10rem, $secondary);
+  font-family: $header;
+  text-shadow: 2px 2px #fff;
 }
 
 h2 {
-  @include fontStyle(6rem, 8rem, white);
+  @include fontStyle(6rem, 8rem, #fff);
+  font-family: $header;
+  text-shadow: 2px 2px $secondary;
 }
 
 main {
-  @include fontStyle(2rem, 4rem, black);
+  @include fontStyle(2rem, 4rem, #000);
 }
 
 footer {
-  @include fontStyle(2rem, 3rem, purple);
+  @include fontStyle(2rem, 3rem, $highlight);
+}
+
+button {
+  @include fontStyle(2.2rem, 3.8rem, #000);
+  font-family: $header;
 }
