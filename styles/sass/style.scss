@@ -1,2 +1,12 @@
 @import "setup";
+@import "variablesAndMixins";
+@import "typography";
+@import "wrapper";
+@import "header";
+@import "bodyContent";
+@import "footer";
 @import "queries";
+
+img {
+  width: 100%;
+}

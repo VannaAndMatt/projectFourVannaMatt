@@ -1,0 +1,21 @@
+//All font stylings
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  @include fontStyle (8rem, 10rem, white);
+}
+
+h2 {
+  @include fontStyle(6rem, 8rem, white);
+}
+
+main {
+  @include fontStyle(2rem, 4rem, black);
+}
+
+footer {
+  @include fontStyle(2rem, 3rem, purple);
+}
