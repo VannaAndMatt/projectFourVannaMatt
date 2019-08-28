@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .content {
   @include flex(column);
   background: lightcoral;

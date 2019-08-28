@@ -5,6 +5,7 @@ const myApp = {};
 myApp.author = null;
 myApp.score = 0;
 myApp.usedQuotes = [];
+myApp.maxScore = 100;
 
 //function to get Kanye, returns a promise
 myApp.getKanye = function() {
@@ -98,6 +99,9 @@ myApp.checkInput = function(selectedGuess) {
     myApp.score -= 10;
   }
   myApp.displayScore();
+  if (myApp.score === myApp.maxScore) {
+    myApp.endGame();
+  }
 };
 
 //display score dynamically function
@@ -114,11 +118,42 @@ myApp.refresh = function() {
   });
 };
 
+myApp.endGame = function() {
+  $(".content").hide(1000, "swing");
+  $(".results").show(1000, "swing");
+  $(".playAgain").removeClass("hidden");
+  $(".next")
+    // .attr("disabled", "disabled")
+    .addClass("hidden");
+};
+
+myApp.setup = function() {
+  $(".content").show();
+  $(".results").hide();
+  $(".guess").removeAttr("disabled");
+  $(".next")
+    .removeClass("hidden")
+    .attr("disabled", "disabled");
+  $(".playAgain").addClass("hidden");
+  myApp.score = 0;
+  myApp.usedQuotes = [];
+  myApp.displayScore();
+};
+
+myApp.playAgain = function() {
+  $(".playAgain").on("click", function() {
+    myApp.setup();
+    myApp.getQuote();
+  });
+};
+
 //init function
 myApp.init = function() {
+  myApp.setup();
   myApp.getQuote();
   myApp.userInput();
   myApp.refresh();
+  myApp.playAgain();
 };
 
 //document ready
