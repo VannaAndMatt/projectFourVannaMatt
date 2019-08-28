@@ -61,7 +61,7 @@ myApp.evalPromise = function(promise) {
 
     let uniqueQuote = true;
     myApp.usedQuotes.forEach(function(item) {
-      if (newQuote === myApp.usedQuotes[item]) {
+      if (newQuote === item) {
         uniqueQuote = false;
       }
     });
@@ -84,7 +84,8 @@ myApp.displayQuote = function(fakeNews) {
 myApp.userInput = function() {
   $(".guess").on("click", function() {
     const selectedGuess = $(this).attr("id");
-    $(".guess").attr('disabled', 'disabled');
+    $(".guess").attr("disabled", "disabled");
+    $(".next").removeAttr("disabled");
     myApp.checkInput(selectedGuess);
   });
 };
@@ -93,8 +94,9 @@ myApp.userInput = function() {
 myApp.checkInput = function(selectedGuess) {
   if (selectedGuess === myApp.author) {
     myApp.score += 10;
+  } else {
+    myApp.score -= 10;
   }
-  console.log(myApp.score);
   myApp.displayScore();
 };
 
@@ -103,10 +105,20 @@ myApp.displayScore = function() {
   $(".currentScore").html(myApp.score);
 };
 
+//refresh function
+myApp.refresh = function() {
+  $(".next").on("click", function() {
+    myApp.getQuote();
+    $(".guess").removeAttr("disabled");
+    $(".next").attr("disabled", "disabled");
+  });
+};
+
 //init function
 myApp.init = function() {
   myApp.getQuote();
   myApp.userInput();
+  myApp.refresh();
 };
 
 //document ready
