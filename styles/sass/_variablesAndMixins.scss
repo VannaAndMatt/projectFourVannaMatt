@@ -1,12 +1,13 @@
 //colours
-$main: #002868;
-$secondary: #bf0a30;
-$background: #f0d5d8;
-$highlight: #cfb53b;
+$main: #2f195f;
+$secondary: #002868;//#f311ff;
+$tertiary: #bf0a30;//#70f7f9;
+$quaternary: #277742;
+$background: #fff; // pinkish: #f0d5d8;
 
 //fonts
-$header: 'Libre Baskerville', serif;
-$body: 'Roboto', sans-serif;
+$header: 'Roboto', sans-serif;
+$body: 'Libre Baskerville', serif;
 
 //mixins
 @mixin flex($direction, $justContent: center) {

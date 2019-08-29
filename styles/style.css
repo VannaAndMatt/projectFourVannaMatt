@@ -224,47 +224,47 @@ textarea {
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #002868;
-  font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px #cfb53b;
+  color: #2f195f;
+  font-family: "Roboto", sans-serif;
+  text-shadow: -3px -3px #002868;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   line-height: 6rem;
-  color: #cfb53b;
-  font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px #002868;
+  color: #002868;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 3px 3px #2f195f;
 }
 
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   line-height: 4rem;
   color: #000;
 }
 
 footer {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   line-height: 3rem;
-  color: #cfb53b;
+  color: #bf0a30;
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 2.2rem;
   line-height: 3.8rem;
   color: #000;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -290,22 +290,22 @@ button {
   height: 55px;
   width: 150px;
   position: relative;
-  background: #cdb335;
+  background: #b80a2e;
   border: none;
 }
 
 .guess svg {
+  position: absolute;
+  width: 100%;
   height: 55px;
   left: 0;
-  position: absolute;
   top: 0;
-  width: 100%;
 }
 
 .guess rect {
+  stroke: #2f195f;
   fill: none;
-  stroke: #002868;
-  stroke-width: 2;
+  stroke-width: 4;
   stroke-dasharray: 422, 0;
   -webkit-transition: all 0.35s linear;
   transition: all 0.35s linear;
@@ -313,7 +313,7 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: rgba(207, 181, 59, 0);
+  background: #bf0a30;
   letter-spacing: 1px;
 }
 
@@ -327,11 +327,11 @@ button {
 }
 
 .kanye {
-  color: #002868;
+  color: #2f195f;
 }
 
 .trump {
-  color: #bf0a30;
+  color: #002868;
 }
 
 .nextQuestion {
@@ -364,7 +364,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f0d5d8;
+  background: #fff;
   height: 25vh;
 }
 
@@ -382,6 +382,8 @@ main {
   bottom: 50px;
   width: 20vw;
   height: 40vh;
+  -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+          filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
 }
 
 .kanyeImage {
@@ -432,18 +434,21 @@ blockquote {
   min-height: 200px;
 }
 
-blockquote::before {
-  content: "“";
+blockquote::before,
+blockquote::after {
   font-size: 13rem;
   position: absolute;
+  text-shadow: 3px 3px #002868, -3px -3px #bf0a30;
+}
+
+blockquote::before {
+  content: "“";
   top: 40px;
   left: -20px;
 }
 
 blockquote::after {
   content: "”";
-  font-size: 13rem;
-  position: absolute;
   bottom: -30px;
   right: -20px;
 }
@@ -524,7 +529,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #002868;
+  background: #2f195f;
   height: 5vh;
 }
 

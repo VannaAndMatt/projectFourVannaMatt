@@ -12,6 +12,14 @@ main {
   bottom: 50px;
   width: 20vw;
   height: 40vh;
+  // -webkit-filter: 
+  //     drop-shadow(20px -20px blue)
+  //     drop-shadow(40px -40px red)
+  //     drop-shadow(20px 20px #222);
+  filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+      // drop-shadow(10px 40px $quaternary); 
 }
 
 .kanyeImage {
@@ -38,18 +46,23 @@ blockquote {
   min-height: 200px;
 }
 
-blockquote::before {
-  content: "“";
+blockquote::before,
+blockquote::after {
   font-size: 13rem;
   position: absolute;
+  text-shadow: 
+    3px 3px $secondary,
+    -3px -3px $tertiary;
+}
+
+blockquote::before {
+  content: "“";
   top: 40px;
   left: -20px;
 }
 
 blockquote::after {
   content: "”";
-  font-size: 13rem;
-  position: absolute;
   bottom: -30px;
   right: -20px;
 }
