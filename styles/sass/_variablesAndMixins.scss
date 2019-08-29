@@ -17,7 +17,7 @@ $body: 'Roboto', sans-serif;
 }
 
 @mixin fontStyle($size, $lh, $color) {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $body;
   font-size: $size;
   line-height: $lh;
   color: $color;

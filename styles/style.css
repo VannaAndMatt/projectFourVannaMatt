@@ -227,39 +227,39 @@ html {
 }
 
 h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #bf0a30;
+  color: #002868;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px #fff;
+  text-shadow: 2px 2px #cfb53b;
 }
 
 h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 6rem;
-  line-height: 8rem;
-  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #cfb53b;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px #bf0a30;
+  text-shadow: 2px 2px #002868;
 }
 
 main {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 4rem;
   color: #000;
 }
 
 footer {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 3rem;
   color: #cfb53b;
 }
 
 button {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
   line-height: 3.8rem;
   color: #000;
@@ -323,7 +323,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #002868;
+  background: #f0d5d8;
 }
 
 .hidden {

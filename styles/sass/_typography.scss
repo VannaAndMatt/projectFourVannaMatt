@@ -6,15 +6,15 @@ html {
 }
 
 h1 {
-  @include fontStyle(8rem, 10rem, $secondary);
+  @include fontStyle(8rem, 10rem, $main);
   font-family: $header;
-  text-shadow: 2px 2px #fff;
+  text-shadow: 2px 2px $highlight;
 }
 
 h2 {
-  @include fontStyle(6rem, 8rem, #fff);
+  @include fontStyle(4rem, 6rem, $highlight);
   font-family: $header;
-  text-shadow: 2px 2px $secondary;
+  text-shadow: 2px 2px $main;
 }
 
 main {
