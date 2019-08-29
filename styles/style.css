@@ -286,8 +286,48 @@ button {
   margin: 0 auto;
 }
 
+.guess {
+  height: 55px;
+  width: 150px;
+  position: relative;
+  background: #cdb335;
+  border: none;
+}
+
+.guess svg {
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.guess rect {
+  fill: none;
+  stroke: #002868;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+
+.guess:hover,
+.guess:focus {
+  background: rgba(207, 181, 59, 0);
+  letter-spacing: 1px;
+}
+
+.guess:hover rect,
+.guess:focus rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .kanye {
-  color: #cfb53b;
+  color: #002868;
 }
 
 .trump {
@@ -492,4 +532,6 @@ img {
   display: block;
   max-width: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
