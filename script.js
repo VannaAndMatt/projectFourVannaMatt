@@ -5,7 +5,7 @@ const myApp = {};
 myApp.author = null;
 myApp.score = 0;
 myApp.usedQuotes = [];
-myApp.maxScore = 100;
+myApp.maxScore = 20;
 
 //function to get Kanye, returns a promise
 myApp.getKanye = function() {
