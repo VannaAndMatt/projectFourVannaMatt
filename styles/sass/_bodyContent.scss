@@ -2,17 +2,41 @@
   display: none;
 }
 
+main {
+  position: relative;
+  height: 70vh;
+}
+
+.headShots {
+  position: absolute;
+  bottom: 50px;
+  width: 20vw;
+  height: 40vh;
+}
+
+.kanyeImage {
+  left: 50px;
+}
+
+.trumpImage {
+  right: 50px;
+}
+
 .content {
-  @include flex(column);
-  background: $background;
+  @include flex(column, space-between);
+  width: 100%;
+  height: 60vh;
 }
 
 .quoteContainer {
+  @include flex(column, center);
   width: 50%;
   text-align: center;
   border: 1px solid black;
   margin-top: 40px;
-  background: #fff;
+  padding: 20px 30px;
+  min-height: 200px;
+
 }
 
 .userInput {
@@ -20,6 +44,7 @@
   justify-content: space-between;
   width: 50%;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .score {

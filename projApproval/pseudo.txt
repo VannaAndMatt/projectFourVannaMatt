@@ -19,27 +19,34 @@ Pseudo Code:
     - app.init()
     
 - app.getQuote():
-    - author = [Kanye, Trump]
-    - app.author = randomly select between Kanye and Trump
+    runLoop = true
+    - while (runLoop) {
+        - author = [Kanye, Trump]
+        - app.author = randomly select between Kanye and Trump
 
-    - localQuote = undefined;
-    - boolean uniqueQuote = false;
+        - localQuote = undefined;
+        - boolean uniqueQuote = false;
 
-    - if (Kanye)
-        - AJAX call to kanye.rest
-        - store in localQuote 
-    - else 
-        - AJAX call to tronalddump.io
-        - store in localQuote 
+        - if (Kanye)
+            - AJAX call to kanye.rest
+            - store in localQuote 
+        - else 
+            - AJAX call to tronalddump.io
+            - store in localQuote 
 
-    - for each app.quoteArray
-        - check if our localQuote == app.quoteArray[index]
-            - uniqueQuote = false
+        - uniqueQuote = true
+        - for each app.quoteArray
+            - check if our localQuote == app.quoteArray[index]
+                - uniqueQuote = false 
 
-    - if (uniqueQuote) {
-        - push quote to app.quoteArray
+        - if (uniqueQuote) {
+            - runLoop = false
+            - push quote to app.quoteArray
+        }
     }
+
     - call displayQuote(localQuote)
+
 
 - app.displayQuote(localQuote):
     - display the quote dynamically in HTML

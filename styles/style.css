@@ -277,12 +277,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   max-width: 1200px;
-  height: 100vh;
-  min-height: 500px;
   margin: 0 auto;
-  background: #fff;
 }
 
 .kanye {
@@ -317,20 +317,59 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: #f0d5d8;
+  height: 25vh;
 }
 
 .hidden {
   display: none;
 }
 
+main {
+  position: relative;
+  height: 70vh;
+}
+
+.headShots {
+  position: absolute;
+  bottom: 50px;
+  width: 20vw;
+  height: 40vh;
+}
+
+.kanyeImage {
+  left: 50px;
+}
+
+.trumpImage {
+  right: 50px;
+}
+
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.quoteContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,15 +383,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f0d5d8;
-}
-
-.quoteContainer {
   width: 50%;
   text-align: center;
   border: 1px solid black;
   margin-top: 40px;
-  background: #fff;
+  padding: 20px 30px;
+  min-height: 200px;
 }
 
 .userInput {
@@ -364,6 +400,7 @@ header {
           justify-content: space-between;
   width: 50%;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .score {
@@ -414,8 +451,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   background: #002868;
+  height: 5vh;
 }
 
 img {
+  display: block;
+  max-width: 100%;
   width: 100%;
 }

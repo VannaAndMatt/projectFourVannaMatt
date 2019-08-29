@@ -67,7 +67,11 @@ myApp.evalPromise = function(promise) {
       }
     });
 
-    if (uniqueQuote) {
+    // Check length of quote because we don't wanna break container
+    const tooLong = newQuote.split(" ").length;
+    console.log(tooLong);
+
+    if (uniqueQuote && tooLong <= 28) {
       myApp.usedQuotes.push(newQuote);
       myApp.displayQuote(newQuote);
     } else {
