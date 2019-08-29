@@ -25,18 +25,33 @@ main {
 .content {
   @include flex(column, space-between);
   width: 100%;
-  height: 60vh;
+  height: 60vh; // also change .results in partial 
 }
 
-.quoteContainer {
+blockquote {
+  position: relative;
   @include flex(column, center);
   width: 50%;
   text-align: center;
-  border: 1px solid black;
   margin-top: 40px;
   padding: 20px 30px;
   min-height: 200px;
+}
 
+blockquote::before {
+  content: "“";
+  font-size: 13rem;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 13rem;
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
 }
 
 .userInput {
@@ -47,6 +62,6 @@ main {
   padding-bottom: 40px;
 }
 
-.score {
+.score{
   @include flex(column);
 }

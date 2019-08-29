@@ -1,4 +1,9 @@
 .results {
   @include flex(column);
-  background: $background;
+  width: 100%;
+  height: 60vh;
+}
+
+.finalScore {
+  @include flex(column);
 }
