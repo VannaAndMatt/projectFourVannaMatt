@@ -8,13 +8,15 @@ html {
 h1 {
   @include fontStyle(8rem, 10rem, $main);
   font-family: $header;
-  text-shadow: 2px 2px $highlight;
+  text-shadow: 
+    -3px -3px $secondary;
 }
 
 h2 {
-  @include fontStyle(4rem, 6rem, $highlight);
+  @include fontStyle(4rem, 6rem, $secondary);
   font-family: $header;
-  text-shadow: 2px 2px $main;
+  text-shadow: 
+    3px 3px $main;
 }
 
 main {
@@ -22,7 +24,7 @@ main {
 }
 
 footer {
-  @include fontStyle(2rem, 3rem, $highlight);
+  @include fontStyle(2rem, 3rem, $tertiary);
 }
 
 button {
