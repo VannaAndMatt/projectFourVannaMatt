@@ -405,16 +405,108 @@ main {
   bottom: 50px;
   width: 20vw;
   height: 40vh;
-  -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
-          filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  -webkit-animation: headExpand 1.5s ease infinite alternate;
+          animation: headExpand 1.5s ease infinite alternate;
+}
+
+@-webkit-keyframes headExpand {
+  from {
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
+}
+
+@keyframes headExpand {
+  from {
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
+}
+
+@-webkit-keyframes kanyeSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
+}
+
+@keyframes kanyeSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
+}
+
+@-webkit-keyframes trumpSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
+}
+
+@keyframes trumpSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+    filter: drop-shadow(10px -10px #002868) drop-shadow(-10px 10px #bf0a30);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+    filter: drop-shadow(25px -25px #002868) drop-shadow(-25px 25px #bf0a30);
+  }
 }
 
 .kanyeImage {
   left: 50px;
 }
 
+.kanyeImage:hover, .kanyeImage:focus {
+  -webkit-animation: kanyeSpin 1s infinite linear;
+          animation: kanyeSpin 1s infinite linear;
+}
+
 .trumpImage {
   right: 50px;
+}
+
+.trumpImage:hover, .trumpImage:focus {
+  -webkit-animation: trumpSpin 1s infinite linear;
+          animation: trumpSpin 1s infinite linear;
 }
 
 .content {
