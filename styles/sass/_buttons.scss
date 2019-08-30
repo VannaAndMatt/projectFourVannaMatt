@@ -1,9 +1,12 @@
+button {
+  border: none;
+}
+
 .guess {
   height: 55px;
   width: 150px;
   position: relative;
   background: darken($tertiary, 1.5%);
-  border: none;
 
   svg {
     position: absolute;
@@ -62,7 +65,18 @@
   top: 65px;
 }
 
-
 .nextQuestion {
   @include flex(row);
+
+  .next {
+  height: 50px;
+  width: 110px;
+  }
+
+  .playAgain {
+    height: 50px;
+    padding: 0 20px;
+    background: $quaternary;
+  }
 }
+

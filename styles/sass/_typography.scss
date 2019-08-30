@@ -19,6 +19,12 @@ h2 {
   border-bottom: 2px solid $secondary;
 }
 
+h4 {
+  @include fontStyle(4rem, 5rem, $main);
+  font-family: $header;
+  padding-bottom: 10px;
+}
+
 main {
   @include fontStyle(2rem, 4rem, #000);
 }
@@ -30,4 +36,5 @@ footer {
 button {
   @include fontStyle(2.2rem, 3.8rem, #000);
   font-family: $header;
+  text-transform: uppercase;
 }
