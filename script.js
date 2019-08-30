@@ -99,12 +99,14 @@ myApp.userInput = function() {
 myApp.checkInput = function(selectedGuess) {
   if (selectedGuess === myApp.author) {
     myApp.score += 10;
-    $(`.${selectedGuess}`).children("span").addClass('addScore');
-    $(`.${selectedGuess}`).children("span").text('+10');
+    $(`.${selectedGuess}`).children("span")
+      .addClass('addScore')
+      .text('+10');
   } else {
     myApp.score -= 10;
-    $(`.${selectedGuess}`).children("span").addClass('subtractScore');
-    $(`.${selectedGuess}`).children("span").text('-10');
+    $(`.${selectedGuess}`).children("span")
+      .addClass('subtractScore')
+      .text('-10');
   }
 
   myApp.displayScore();
@@ -124,9 +126,10 @@ myApp.refresh = function() {
     myApp.getQuote();
     $(".guess").removeAttr("disabled");
     $(".next").attr("disabled", "disabled");
-    $(".guess").children("span").removeClass('subtractScore');
-    $(".guess").children("span").removeClass('addScore');
-    $(".guess").children("span").text('');
+    $(".guess").children("span")
+      .removeClass('subtractScore')
+      .removeClass('addScore')
+      .text('');
   });
 };
 
@@ -143,6 +146,10 @@ myApp.setup = function() {
   $(".content").show();
   $(".results").hide();
   $(".guess").removeAttr("disabled");
+  $(".guess").children("span")
+    .removeClass('subtractScore')
+    .removeClass('addScore')
+    .text('');
   $(".next")
     .removeClass("hidden")
     .attr("disabled", "disabled");
