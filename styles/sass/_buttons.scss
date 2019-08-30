@@ -24,7 +24,7 @@
 
 .guess:hover,
 .guess:focus {
-  background: darken($tertiary, 0);
+  background: darken($background, 0);
   letter-spacing: 1px;
   
   rect {
@@ -36,11 +36,11 @@
 }
 
 .kanye {
-  color: $main;
+  color: $quaternary;
 }
 
 .trump {
-  color: $secondary;
+  color: $main;
 }
 
 .scoreChange {

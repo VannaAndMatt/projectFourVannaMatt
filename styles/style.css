@@ -233,7 +233,7 @@ h1 {
   line-height: 10rem;
   color: #2f195f;
   font-family: "Roboto", sans-serif;
-  text-shadow: -3px -3px #002868;
+  text-shadow: -3px -3px gold;
 }
 
 h2 {
@@ -242,7 +242,7 @@ h2 {
   line-height: 6rem;
   color: #002868;
   font-family: "Roboto", sans-serif;
-  text-shadow: 3px 3px #2f195f;
+  text-shadow: 3px 3px gold;
 }
 
 main {
@@ -256,7 +256,7 @@ footer {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   line-height: 3rem;
-  color: #bf0a30;
+  color: gold;
 }
 
 button {
@@ -313,7 +313,7 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: #bf0a30;
+  background: white;
   letter-spacing: 1px;
 }
 
@@ -327,11 +327,11 @@ button {
 }
 
 .kanye {
-  color: #2f195f;
+  color: gold;
 }
 
 .trump {
-  color: #002868;
+  color: #2f195f;
 }
 
 .scoreChange {
