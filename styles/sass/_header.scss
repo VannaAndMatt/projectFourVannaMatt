@@ -2,4 +2,6 @@ header {
   @include flex(column, space-between);
   background: $background;
   height: 25vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
