@@ -12,22 +12,86 @@ main {
   bottom: 50px;
   width: 20vw;
   height: 40vh;
-  // -webkit-filter: 
-  //     drop-shadow(20px -20px blue)
-  //     drop-shadow(40px -40px red)
-  //     drop-shadow(20px 20px #222);
-  filter: 
+  animation: headExpand 1.5s ease infinite alternate;
+}
+
+@keyframes headExpand {
+  from {
+    -webkit-filter: 
       drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-      // drop-shadow(10px 40px $quaternary); 
+    filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+  }
+  to {
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+  }
+}
+
+@keyframes kanyeSpin {
+  from {
+    transform: rotate(0deg);
+    -webkit-filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+    filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+  }
+  to {
+    transform: rotate(-360deg);
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+  }
+}
+
+@keyframes trumpSpin {
+  from {
+    transform: rotate(0deg);
+    -webkit-filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+    filter: 
+      drop-shadow(10px -10px $secondary)
+      drop-shadow(-10px 10px $tertiary);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary)
+      drop-shadow(-25px 25px $tertiary);
+  }
 }
 
 .kanyeImage {
   left: 50px;
+
+  &:hover,
+  &:focus {
+    animation: kanyeSpin 1s infinite linear;
+  }
 }
 
 .trumpImage {
   right: 50px;
+
+  &:hover,
+  &:focus {
+    animation: trumpSpin 1s infinite linear;
+  }
 }
 
 .content {
