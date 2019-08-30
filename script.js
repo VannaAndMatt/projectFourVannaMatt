@@ -20,7 +20,7 @@ myApp.getKanye = function() {
 myApp.getTrump = function() {
   //using hackeryou proxy due to CORS error
   return $.ajax({
-    url: "http://proxy.hackeryou.com",
+    url: "https://proxy.hackeryou.com",
     method: "GET",
     dataType: "json",
     data: {
