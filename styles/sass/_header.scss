@@ -5,3 +5,13 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+h1 {
+  text-shadow: -2px -2px $tertiary;
+  border-top: 2px solid $main;
+}
+
+h2 {
+  // text-shadow: 2px 2px $secondary;
+  border-bottom: 2px solid $main;
+}

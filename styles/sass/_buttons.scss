@@ -6,7 +6,7 @@ button {
   height: 55px;
   width: 150px;
   position: relative;
-  background: darken($tertiary, 1.5%);
+  background: darken($main, 1.5%);
 
   svg {
     position: absolute;
@@ -27,7 +27,8 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: darken($background, 0);
+  background: darken(#ddd0d0, 0);
+  color: $main;
   letter-spacing: 1px;
   
   rect {
@@ -43,7 +44,7 @@ button {
 }
 
 .trump {
-  color: $main;
+  color: $tertiary;
 }
 
 .scoreChange {
@@ -56,12 +57,12 @@ button {
 }
 
 .addScore {
-  color: lightgreen;
+  color: #0cb10c;
   top: -50px;
 }
 
 .subtractScore {
-  color: maroon;
+  color: #b30606;
   top: 65px;
 }
 

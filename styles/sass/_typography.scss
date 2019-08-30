@@ -8,15 +8,15 @@ html {
 h1 {
   @include fontStyle(8rem, 10rem, $main);
   font-family: $header;
-  text-shadow: -3px -3px $quaternary;
-  border-top: 2px solid $main;
 }
 
 h2 {
-  @include fontStyle(4rem, 6rem, $secondary);
+  @include fontStyle(4rem, 6rem, $main);
   font-family: $header;
-  text-shadow: 3px 3px $quaternary;
-  border-bottom: 2px solid $secondary;
+}
+
+h3 {
+  @include fontStyle(2rem, 3.6rem, #000);
 }
 
 h4 {
@@ -37,4 +37,8 @@ button {
   @include fontStyle(2.2rem, 3.8rem, #000);
   font-family: $header;
   text-transform: uppercase;
+}
+
+span {
+  @include fontStyle(3.6rem, 5rem, $main);
 }
