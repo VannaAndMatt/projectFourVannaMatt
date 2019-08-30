@@ -247,6 +247,15 @@ h2 {
   border-bottom: 2px solid #002868;
 }
 
+h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #2f195f;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
 main {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
@@ -267,6 +276,7 @@ button {
   line-height: 3.8rem;
   color: #000;
   font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -288,12 +298,15 @@ button {
   margin: 0 auto;
 }
 
+button {
+  border: none;
+}
+
 .guess {
   height: 55px;
   width: 150px;
   position: relative;
   background: #b80a2e;
-  border: none;
 }
 
 .guess svg {
@@ -369,6 +382,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nextQuestion .next {
+  height: 50px;
+  width: 110px;
+}
+
+.nextQuestion .playAgain {
+  height: 50px;
+  padding: 0 20px;
+  background: gold;
 }
 
 header {
@@ -628,6 +652,9 @@ blockquote::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #2f195f;
+  background: darkgrey;
+  padding: 20px 80px;
 }
 
 footer {
