@@ -440,6 +440,7 @@ h2 {
 }
 
 main {
+  background: #fff;
   position: relative;
   height: 70vh;
 }
