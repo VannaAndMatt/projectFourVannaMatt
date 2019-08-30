@@ -234,6 +234,7 @@ h1 {
   color: #2f195f;
   font-family: "Roboto", sans-serif;
   text-shadow: -3px -3px gold;
+  border-top: 2px solid #2f195f;
 }
 
 h2 {
@@ -243,6 +244,7 @@ h2 {
   color: #002868;
   font-family: "Roboto", sans-serif;
   text-shadow: 3px 3px gold;
+  border-bottom: 2px solid #002868;
 }
 
 main {
@@ -254,7 +256,7 @@ main {
 
 footer {
   font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 3rem;
   color: gold;
 }
@@ -385,6 +387,8 @@ header {
           align-items: center;
   background: #fff;
   height: 25vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .hidden {
