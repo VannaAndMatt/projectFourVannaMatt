@@ -99,9 +99,14 @@ myApp.userInput = function() {
 myApp.checkInput = function(selectedGuess) {
   if (selectedGuess === myApp.author) {
     myApp.score += 10;
+    $(`.${selectedGuess}`).children("span").addClass('addScore');
+    $(`.${selectedGuess}`).children("span").text('+10');
   } else {
     myApp.score -= 10;
+    $(`.${selectedGuess}`).children("span").addClass('subtractScore');
+    $(`.${selectedGuess}`).children("span").text('-10');
   }
+
   myApp.displayScore();
   if (myApp.score === myApp.maxScore) {
     myApp.endGame();
@@ -119,6 +124,9 @@ myApp.refresh = function() {
     myApp.getQuote();
     $(".guess").removeAttr("disabled");
     $(".next").attr("disabled", "disabled");
+    $(".guess").children("span").removeClass('subtractScore');
+    $(".guess").children("span").removeClass('addScore');
+    $(".guess").children("span").text('');
   });
 };
 
