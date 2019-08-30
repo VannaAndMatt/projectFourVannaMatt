@@ -43,6 +43,26 @@
   color: $secondary;
 }
 
+.scoreChange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  // bottom: 0;
+  transition: all 0.3s;
+}
+
+.addScore {
+  color: lightgreen;
+  top: -50px;
+}
+
+.subtractScore {
+  color: maroon;
+  top: 65px;
+}
+
+
 .nextQuestion {
   @include flex(row);
 }

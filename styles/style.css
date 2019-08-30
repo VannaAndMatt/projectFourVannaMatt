@@ -334,6 +334,25 @@ button {
   color: #002868;
 }
 
+.scoreChange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.addScore {
+  color: lightgreen;
+  top: -50px;
+}
+
+.subtractScore {
+  color: maroon;
+  top: 65px;
+}
+
 .nextQuestion {
   display: -webkit-box;
   display: -ms-flexbox;
