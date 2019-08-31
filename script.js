@@ -175,19 +175,19 @@ myApp.checkInput = function(selectedGuess) {
     myApp.endGame();
   } else {
     myApp.getQuote();
-    setTimeout(function(){ 
-      $('.guess')
-        .children('span')
-        .removeClass('subtractScore')
-        .removeClass('addScore')
-        .text('');
-      $('.headShots')
-        .children()
-        .removeClass('animated')
-        .removeClass('bounce')
-        .removeClass('shake');
-    }, 1500);
   }
+  setTimeout(function(){ 
+    $('.guess')
+      .children('span')
+      .removeClass('subtractScore')
+      .removeClass('addScore')
+      .text('');
+    $('.headShots')
+      .children()
+      .removeClass('animated')
+      .removeClass('bounce')
+      .removeClass('shake');
+  }, 1500);
 };
 
 //===========================
