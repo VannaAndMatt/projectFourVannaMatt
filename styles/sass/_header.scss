@@ -1,6 +1,6 @@
 header {
   @include flex(column, space-between);
-  background: $background;
+  // background: $background;
   height: 25vh;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -12,6 +12,6 @@ h1 {
 }
 
 h2 {
-  // text-shadow: 2px 2px $secondary;
+  text-shadow: 2px 2px $secondary;
   border-bottom: 2px solid $main;
 }

@@ -7,7 +7,7 @@ button {
   height: 55px;
   width: 150px;
   position: relative;
-  background: darken($main, 1.5%);
+  background: darken($quaternary, 1.5%);
 
   svg {
     position: absolute;
@@ -28,7 +28,7 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: darken(#ddd0d0, 0);
+  background: darken(#ffffff, 0);
   color: $main;
   letter-spacing: 1px;
 
@@ -42,11 +42,11 @@ button {
 
 //specific button styling
 .kanye {
-  color: $quaternary;
+  color: #2c2f30;
 }
 
 .trump {
-  color: $tertiary;
+  color: #2c2f30;
 }
 
 .nextQuestion {
