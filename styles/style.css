@@ -239,7 +239,7 @@ h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   line-height: 6rem;
-  color: #cfb53b;
+  color: #f3e367;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
@@ -271,7 +271,7 @@ footer {
   font-family: "Libre Baskerville", serif;
   font-size: 1.6rem;
   line-height: 3rem;
-  color: #cfb53b;
+  color: #f3e367;
 }
 
 button {
@@ -317,7 +317,7 @@ button {
   height: 55px;
   width: 150px;
   position: relative;
-  background: #cdb335;
+  background: #f2e260;
 }
 
 .guess svg {
@@ -385,7 +385,7 @@ button {
 .nextQuestion .playAgain {
   height: 50px;
   padding: 0 20px;
-  background: #cfb53b;
+  background: #f3e367;
 }
 
 .scoreChange {
