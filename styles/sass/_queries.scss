@@ -1,0 +1,51 @@
+//Large Desktops
+@media(min-width: 1400px) {
+  h1 {
+  @include fontStyle(10rem, 12rem, $main, $header, 900);
+}
+
+h2 {
+  @include fontStyle(6rem, 8rem, $quaternary, $header);
+  text-transform: uppercase;
+}
+
+h3 {
+  @include fontStyle(3.8rem, 4.6rem, $light);
+}
+
+h4 {
+  @include fontStyle(5rem, 6rem, $main, $header);
+  padding-bottom: 10px;
+}
+
+//non header styling
+main {
+  @include fontStyle(2.4rem, 4rem, $main);
+}
+
+footer {
+  @include fontStyle(2rem, 3rem, $quaternary, $header);
+}
+
+button {
+  @include fontStyle(2.6rem, 3.8rem, $main, $header, 900);
+  text-transform: uppercase;
+}
+}
+
+//Portrait tablet and small desktops 
+@media (max-width: 940px){
+
+}
+//Landscape phone to portrait tablet 
+@media (max-width: 768px){
+
+}
+//Landscape phones and down 
+@media (max-width: 480px){
+
+}
+//Even smaller
+@media(max-width: 320px){
+
+}
