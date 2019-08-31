@@ -345,16 +345,12 @@ button {
   transition: all 0.4s linear;
 }
 
-button:not(.disabled) svg {
+button svg {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-}
-
-button.disabled svg {
-  display: none;
 }
 
 button rect {
@@ -372,16 +368,11 @@ button rect {
   background: #f3e367;
 }
 
-.guess.disabled {
-  background: rgba(243, 227, 103, 0.3);
-  color: rgba(24, 26, 26, 0.3);
-}
-
-.guess:not(.disabled):hover, .guess:not(.disabled):focus {
+.guess:hover, .guess:focus {
   background: #fff;
 }
 
-.guess:not(.disabled):hover rect, .guess:not(.disabled):focus rect {
+.guess:hover rect, .guess:focus rect {
   stroke-width: 5;
   stroke-dasharray: 15, 305;
   stroke-dashoffset: 48;
@@ -389,7 +380,7 @@ button rect {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nextQuestion {
+.playAgainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,29 +394,6 @@ button rect {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.next {
-  background: #d9d9d9;
-  height: 50px;
-  width: 110px;
-}
-
-.next.disabled {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(24, 26, 26, 0.3);
-}
-
-.next:not(.disabled):hover, .next:not(.disabled):focus {
-  background: #fff;
-}
-
-.next:not(.disabled):hover rect, .next:not(.disabled):focus rect {
-  stroke-width: 5;
-  stroke-dasharray: 15, 240;
-  stroke-dashoffset: 48;
-  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .playAgain {

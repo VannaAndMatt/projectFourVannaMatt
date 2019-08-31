@@ -92,12 +92,6 @@ myApp.displayQuote = function(fakeNews) {
 myApp.userInput = function() {
   $(".guess").on("click", function() {
     const selectedGuess = $(this).attr("id");
-    $(".guess")
-      .attr("disabled", "disabled")
-      .addClass("disabled");
-    $(".next")
-      .removeAttr("disabled")
-      .removeClass("disabled");
     myApp.checkInput(selectedGuess);
   });
 };
@@ -125,39 +119,30 @@ myApp.checkInput = function(selectedGuess) {
       .addClass('animated shake');
   }
 
-//If statement to end game once max questions are reached
+  //If statement to end game once max questions are reached
   myApp.displayScore();
   if (myApp.questionCount === myApp.questionMax) {
     myApp.endGame();
+  } else {
+    myApp.getQuote();
+    setTimeout(function(){ 
+      $('.guess')
+        .children('span')
+        .removeClass('subtractScore')
+        .removeClass('addScore')
+        .text('');
+      $('.headShots')
+        .children()
+        .removeClass('animated')
+        .removeClass('bounce')
+        .removeClass('shake');
+    }, 1500);
   }
 };
 
 //display score dynamically function
 myApp.displayScore = function() {
   $(".currentScore").html(myApp.score);
-};
-
-//function to call next question
-myApp.nextQuestion = function() {
-  $(".next").on("click", function() {
-    myApp.getQuote();
-    $('.guess')
-      .removeAttr('disabled')
-      .removeClass('disabled');
-    $('.next')
-      .attr('disabled', 'disabled')
-      .addClass('disabled');
-    $('.guess')
-      .children('span')
-      .removeClass('subtractScore')
-      .removeClass('addScore')
-      .text('');
-    $('.headShots')
-      .children()
-      .removeClass('animated')
-      .removeClass('bounce')
-      .removeClass('shake');
-  });
 };
 
 // end game function
@@ -168,7 +153,6 @@ myApp.endGame = function() {
   $(".content").hide(1000, "swing");
   $(".results").show(1000, "swing");
   $(".playAgain").removeClass("hidden");
-  $(".next").addClass("hidden");
 };
 
 // setup function
@@ -176,17 +160,10 @@ myApp.setup = function() {
   $(".content").show();
   $(".results").hide();
   $(".guess")
-    .removeAttr("disabled")
-    .removeClass("disabled");
-  $(".guess")
     .children("span")
     .removeClass("subtractScore")
     .removeClass("addScore")
     .text("");
-  $(".next")
-    .attr("disabled", "disabled")
-    .removeClass("hidden")
-    .addClass("disabled");
   $(".playAgain").addClass("hidden");
   myApp.score = 0;
   myApp.usedQuotes = [];
@@ -208,7 +185,6 @@ myApp.init = function() {
   myApp.setup();
   myApp.getQuote();
   myApp.userInput();
-  myApp.nextQuestion();
   myApp.playAgain();
 };
 
