@@ -6,7 +6,7 @@ html {
 
 //headers
 h1 {
-  @include fontStyle(8rem, 10rem, $dark);
+  @include fontStyle(8rem, 10rem, $main);
   font-family: $header;
   font-weight: 900;
 }
@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-  @include fontStyle(2.4rem, 3.6rem, #fff);
+  @include fontStyle(2.4rem, 3.6rem, $light);
 }
 
 h4 {
@@ -30,7 +30,7 @@ h4 {
 
 //non header styling
 main {
-  @include fontStyle(2rem, 4rem, #000);
+  @include fontStyle(2rem, 4rem, $main);
 }
 
 footer {
@@ -40,7 +40,7 @@ footer {
 }
 
 button {
-  @include fontStyle(2.2rem, 3.8rem, #000);
+  @include fontStyle(2.2rem, 3.8rem, $main);
   font-family: $header;
   font-weight: 900;
   text-transform: uppercase;
@@ -51,6 +51,6 @@ span {
 }
 
 .currentScore {
-  @include fontStyle(3rem, 4rem, #000);
-  text-shadow: -1px 1px #fff;
+  @include fontStyle(3rem, 4rem, $main);
+  text-shadow: -1px 1px $light;
 }

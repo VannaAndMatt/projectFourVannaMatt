@@ -7,7 +7,7 @@
 .finalScore {
   @include flex(column);
   border: 2px solid $main;
-  background: #fff;
+  background: $light;
   padding: 20px 80px;
 }
 

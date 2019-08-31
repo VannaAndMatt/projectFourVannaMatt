@@ -231,7 +231,7 @@ h1 {
   font-family: "Cardo", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #232525;
+  color: #181a1a;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
@@ -257,7 +257,7 @@ h4 {
   font-family: "Cardo", serif;
   font-size: 4rem;
   line-height: 5rem;
-  color: #170a1c;
+  color: #181a1a;
   font-family: "Lato", sans-serif;
   padding-bottom: 10px;
 }
@@ -266,7 +266,7 @@ main {
   font-family: "Cardo", serif;
   font-size: 2rem;
   line-height: 4rem;
-  color: #000;
+  color: #181a1a;
 }
 
 footer {
@@ -282,7 +282,7 @@ button {
   font-family: "Cardo", serif;
   font-size: 2.2rem;
   line-height: 3.8rem;
-  color: #000;
+  color: #181a1a;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -292,14 +292,14 @@ span {
   font-family: "Cardo", serif;
   font-size: 3.6rem;
   line-height: 5rem;
-  color: #170a1c;
+  color: #181a1a;
 }
 
 .currentScore {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Cardo", serif;
   font-size: 3rem;
   line-height: 4rem;
-  color: #000;
+  color: #181a1a;
   text-shadow: -1px 1px #fff;
 }
 
@@ -342,7 +342,7 @@ button {
 }
 
 .guess rect {
-  stroke: #170a1c;
+  stroke: #181a1a;
   fill: none;
   stroke-width: 4;
   stroke-dasharray: 422, 0;
@@ -353,7 +353,7 @@ button {
 .guess:hover,
 .guess:focus {
   background: white;
-  color: #170a1c;
+  color: #181a1a;
   letter-spacing: 1px;
 }
 
@@ -367,7 +367,7 @@ button {
 }
 
 .kanye, .trump {
-  color: #232525;
+  color: #181a1a;
   font-weight: bold;
 }
 
@@ -571,11 +571,11 @@ header {
 
 h1 {
   text-shadow: -2px -2px #fff;
-  border-top: 2px solid #170a1c;
+  border-top: 2px solid #181a1a;
 }
 
 h2 {
-  border-bottom: 2px solid #170a1c;
+  border-bottom: 2px solid #181a1a;
 }
 
 .hidden {
@@ -815,7 +815,7 @@ blockquote::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #170a1c;
+  border: 2px solid #181a1a;
   background: #fff;
   padding: 20px 80px;
 }
@@ -838,7 +838,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #232525;
+  background: #181a1a;
   height: 5vh;
 }
 
