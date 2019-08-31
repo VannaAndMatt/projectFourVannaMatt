@@ -42,7 +42,7 @@ button {
 }
 
 .currentScore {
-  @include fontStyle(3rem, 4rem, $main, $header);
+  @include fontStyle(3.3rem, 4rem, $main, $header, 900);
   text-shadow: -1px 1px $light;
 }
 
@@ -53,4 +53,3 @@ span {
 i {
   @include fontStyle(4rem, 5rem, $secondary);
 }
-
