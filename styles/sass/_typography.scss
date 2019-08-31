@@ -1,10 +1,14 @@
-//All font stylings
+//====================
+// All Font Stylings
+//====================
 html {
   font-size: 62.5%;
   font-family: $body;
 }
 
-//headers
+//====================
+// Headings
+//====================
 h1 {
   @include fontStyle(8rem, 10rem, $main, $header, 900);
 }
@@ -23,7 +27,9 @@ h4 {
   padding-bottom: 10px;
 }
 
-//non header styling
+//====================
+// Not the Headings
+//====================
 main {
   @include fontStyle(2rem, 4rem, $main);
 }

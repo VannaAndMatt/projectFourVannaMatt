@@ -9,6 +9,7 @@ footer {
 
       &:hover, 
       &:focus {
+        outline: none;
         color: $tertiary;
       }
     }

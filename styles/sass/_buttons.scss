@@ -1,4 +1,6 @@
-//global button styling
+//====================
+// All da buttons
+//====================
 button {
   border: none;
   position: relative;
@@ -21,7 +23,9 @@ button {
   }
 }
 
-// Guesses Styling
+//====================
+// Guess Buttons
+//====================
 .guess {
   height: 55px;
   width: 150px;
@@ -40,7 +44,27 @@ button {
   }
 }
 
-// Play Again Styling
+//====================
+// Score Feedback Styling
+//====================
+.scoreChange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.addScore {
+  animation: correctScoreFade linear 1.5s forwards;
+}
+
+.subtractScore {
+  animation: incorrectScoreFade linear 1.5s forwards;
+}
+
+//====================
+// Play Again Button
+//====================
 .playAgainContainer {
   @include flex(row);
 }
@@ -63,25 +87,9 @@ button {
   }
 }
 
-//score feedback styling
-.scoreChange {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.addScore {
-  animation: correctScoreFade linear 1.5s forwards;
-}
-
-.subtractScore {
-  animation: incorrectScoreFade linear 1.5s forwards;
-}
-
-// =======================
-// == Keyframes
-// =======================
+//====================
+// Keyframes
+//====================
 @keyframes correctScoreFade {
   0% {
     color: rgba($correct,1);

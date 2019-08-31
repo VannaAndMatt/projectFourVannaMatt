@@ -1,4 +1,6 @@
-//colours
+//====================
+// Colours
+//====================
 $main: #181a1a;
 $secondary: #228cdb;
 $tertiary: #7e52a0;
@@ -8,11 +10,15 @@ $light: #fff;
 $correct: #078627;
 $incorrect: #b30606;
 
-//fonts
+//====================
+// Fonts
+//====================
 $header: "Lato", sans-serif;
 $body: 'Cardo', serif;
 
-//mixins
+//====================
+// Mixins
+//====================
 @mixin flex($direction, $justContent: center) {
   display: flex;
   flex-direction: $direction;

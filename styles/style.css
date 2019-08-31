@@ -385,6 +385,23 @@ button rect {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.scoreChange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.addScore {
+  -webkit-animation: correctScoreFade linear 1.5s forwards;
+          animation: correctScoreFade linear 1.5s forwards;
+}
+
+.subtractScore {
+  -webkit-animation: incorrectScoreFade linear 1.5s forwards;
+          animation: incorrectScoreFade linear 1.5s forwards;
+}
+
 .playAgainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,23 +434,6 @@ button rect {
   stroke-dashoffset: 48;
   -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.scoreChange {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.addScore {
-  -webkit-animation: correctScoreFade linear 1.5s forwards;
-          animation: correctScoreFade linear 1.5s forwards;
-}
-
-.subtractScore {
-  -webkit-animation: incorrectScoreFade linear 1.5s forwards;
-          animation: incorrectScoreFade linear 1.5s forwards;
 }
 
 @-webkit-keyframes correctScoreFade {
@@ -698,6 +698,12 @@ blockquote::after {
           align-items: center;
 }
 
+i:hover,
+i:focus {
+  -webkit-animation: wiggle 1s infinite;
+          animation: wiggle 1s infinite;
+}
+
 @-webkit-keyframes headExpand {
   from {
     -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
@@ -777,6 +783,52 @@ blockquote::after {
             transform: rotate(360deg);
     -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
     filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  75% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  75% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -869,6 +921,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
+  outline: none;
   color: #7e52a0;
 }
 
