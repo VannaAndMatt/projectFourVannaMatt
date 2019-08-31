@@ -28,7 +28,7 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: darken(#fff, 0);
+  background: darken($light, 0);
   color: $main;
   letter-spacing: 1px;
 
@@ -42,7 +42,7 @@ button {
 
 //specific button styling
 .kanye, .trump {
-  color: $dark;
+  color: $main;
   font-weight: bold;
 }
 
