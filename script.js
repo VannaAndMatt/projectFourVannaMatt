@@ -6,7 +6,7 @@ myApp.author = null;
 myApp.usedQuotes = [];
 myApp.score = 0;
 myApp.correctAnswers = 0;
-myApp.questionMax = 2;
+myApp.questionMax = 10;
 myApp.questionCount = 0;
 
 //function to get Kanye, returns a promise
