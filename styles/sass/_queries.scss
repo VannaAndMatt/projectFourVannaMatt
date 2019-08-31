@@ -1,5 +1,5 @@
 //Large Desktops
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   h1 {
     font-size: 10rem;
     line-height: 12rem;
@@ -34,20 +34,21 @@
     font-size:2.6rem;
     line-height:3.8rem;
   }
-}
+} // end of 1400px
 
 //Portrait tablet and small desktops
 @media (max-width: 940px) {
   blockquote {
     width: 60%;
   }
+
   .userInput {
     width: 70%;
   }
-}
+} // end of 940px
+
 //Landscape phone to portrait tablet
 @media (max-width: 768px) {
-
   h1 {
     font-size: 6rem;
     line-height: 8rem;
@@ -64,10 +65,78 @@
   .headShots {
     height: auto;
   }
-}
+
+  @keyframes headExpand {
+    from {
+      -webkit-filter: 
+        drop-shadow(5px -5px $secondary)
+        drop-shadow(-5px 5px $tertiary);
+      filter: 
+        drop-shadow(5px -5px $secondary) 
+        drop-shadow(-5px 5px $tertiary);
+    }
+    to {
+      -webkit-filter: 
+        drop-shadow(10px -10px $secondary)
+        drop-shadow(-10px 10px $tertiary);
+      filter: 
+        drop-shadow(10px -10px $secondary) 
+        drop-shadow(-10px 10px $tertiary);
+    }
+  }
+  
+  @keyframes kanyeSpin {
+    from {
+      transform: rotate(0deg);
+      -webkit-filter: 
+        drop-shadow(5px -5px $secondary)
+        drop-shadow(-5px 5px $tertiary);
+      filter: 
+        drop-shadow(5px -5px $secondary) 
+        drop-shadow(-5px 5px $tertiary);
+    }
+    to {
+      transform: rotate(-360deg);
+      -webkit-filter: 
+        drop-shadow(10px -10px $secondary)
+        drop-shadow(-10px 10px $tertiary);
+      filter: 
+        drop-shadow(10px -10px $secondary) 
+        drop-shadow(-10px 10px $tertiary);
+    }
+  }
+  
+  @keyframes trumpSpin {
+    from {
+      transform: rotate(0deg);
+      -webkit-filter: 
+        drop-shadow(5px -5px $secondary)
+        drop-shadow(-5px 5px $tertiary);
+      filter: 
+        drop-shadow(5px -5px $secondary) 
+        drop-shadow(-5px 5px $tertiary);
+    }
+    to {
+      transform: rotate(360deg);
+      -webkit-filter: 
+        drop-shadow(10px -10px $secondary)
+        drop-shadow(-10px 10px $tertiary);
+      filter: 
+        drop-shadow(10px -10px $secondary) 
+        drop-shadow(-10px 10px $tertiary);
+    }
+  }
+} // end of 768px
+
+@media (max-width: 585px) {
+  footer {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+} // end of 585px
+
 //Landscape phones and down
 @media (max-width: 480px) {
-
   header {
     height: 15vh;
   }
@@ -100,11 +169,6 @@
     width: 100px;
   }
 
-  footer {
-    font-size: 1.2rem;
-    line-height: 2rem;
-  }
-
   blockquote {
     width: 80%;
   }
@@ -117,7 +181,34 @@
     padding: 20px 40px;
   }
 
-}
+  @keyframes incorrectScoreFade {
+    0% {
+      color: rgba($incorrect,1);
+      top: 0;
+    }
+    15%, 45%, 65% {
+      color: rgba($incorrect,1);
+      top: 45px;
+    }
+    20% {
+      color: rgba($incorrect,1);
+      top: 55px;
+    }
+    25%, 35% {
+      color: rgba($incorrect,1);
+      top: 35px;
+    }
+    30% {
+      color: rgba($incorrect,1);
+      top: 50px;
+    }
+    100% {
+      color: rgba($incorrect,0);
+      top: 45px;
+    }
+  }
+} // end of 480px
+
 //Even smaller
 @media (max-width: 380px) {
   h1 {
@@ -134,7 +225,7 @@
   }
 
   main {
-    @include flex(column, space-between)
+    @include flex(column, space-between);
   }
 
   blockquote {
@@ -144,14 +235,15 @@
   footer {
     font-size: 1rem;
   }
-}
+} // end of 380px
 
 //teeny phones
 @media (max-width: 320px) {
-.score p:first-child {
-  font-size: 1.4rem;
-}
-.guess {
+  .score p:first-child {
+    font-size: 1.4rem;
+  }
+
+  .guess {
     font-size: 1.6rem;
     line-height: 2rem;
     height: 35px;
@@ -177,5 +269,66 @@
   footer {
     font-size: 0.9rem;
   }
-}
+
+  @keyframes headExpand {
+    from {
+      -webkit-filter: 
+        drop-shadow(3px -3px $secondary)
+        drop-shadow(-3px 3px $tertiary);
+      filter: 
+        drop-shadow(3px -3px $secondary) 
+        drop-shadow(-3px 3px $tertiary);
+    }
+    to {
+      -webkit-filter: 
+        drop-shadow(6px -6px $secondary)
+        drop-shadow(-6px 6px $tertiary);
+      filter: 
+        drop-shadow(6px -6px $secondary) 
+        drop-shadow(-6px 6px $tertiary);
+    }
+  }
+  
+  @keyframes kanyeSpin {
+    from {
+      transform: rotate(0deg);
+      -webkit-filter: 
+        drop-shadow(3px -3px $secondary)
+        drop-shadow(-3px 3px $tertiary);
+      filter: 
+        drop-shadow(3px -3px $secondary) 
+        drop-shadow(-3px 3px $tertiary);
+    }
+    to {
+      transform: rotate(-360deg);
+      -webkit-filter: 
+        drop-shadow(6px -6px $secondary)
+        drop-shadow(-6px 6px $tertiary);
+      filter: 
+        drop-shadow(6px -6px $secondary) 
+        drop-shadow(-6px 6px $tertiary);
+    }
+  }
+  
+  @keyframes trumpSpin {
+    from {
+      transform: rotate(0deg);
+      -webkit-filter: 
+        drop-shadow(3px -3px $secondary)
+        drop-shadow(-3px 3px $tertiary);
+      filter: 
+        drop-shadow(3px -3px $secondary) 
+        drop-shadow(-3px 3px $tertiary);
+    }
+    to {
+      transform: rotate(360deg);
+      -webkit-filter: 
+        drop-shadow(6px -6px $secondary)
+        drop-shadow(-6px 6px $tertiary);
+      filter: 
+        drop-shadow(6px -6px $secondary) 
+        drop-shadow(-6px 6px $tertiary);
+    }
+  }
+} // end of 320px
 
