@@ -26,3 +26,35 @@ $body: 'Cardo', serif;
   line-height: $lh;
   color: $color;
 }
+
+//responsive mixins
+@mixin smallPhone {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin regPhones {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin tabletToDesktop {
+  @media (max-width: 940px) {
+    @content;
+  }
+}
+@mixin regDesktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin largeDesktop {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}
