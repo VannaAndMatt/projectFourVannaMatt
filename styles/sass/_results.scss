@@ -6,7 +6,11 @@
 
 .finalScore {
   @include flex(column);
-  border: 1px solid $main;
-  background: darkgrey;
+  border: 2px solid $main;
+  background: #fff;
   padding: 20px 80px;
+}
+
+.results .currentScore {
+  color: $secondary;
 }
