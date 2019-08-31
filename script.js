@@ -6,7 +6,7 @@ myApp.author = null;
 myApp.usedQuotes = [];
 myApp.score = 0;
 myApp.correctAnswers = 0;
-myApp.questionMax = 10;
+myApp.questionMax = 2;
 myApp.questionCount = 0;
 
 //function to get Kanye, returns a promise
@@ -92,8 +92,12 @@ myApp.displayQuote = function(fakeNews) {
 myApp.userInput = function() {
   $(".guess").on("click", function() {
     const selectedGuess = $(this).attr("id");
-    $(".guess").attr("disabled", "disabled");
-    $(".next").removeAttr("disabled");
+    $(".guess")
+      .attr("disabled", "disabled")
+      .addClass("disabled");
+    $(".next")
+      .removeAttr("disabled")
+      .removeClass("disabled");
     myApp.checkInput(selectedGuess);
   });
 };
@@ -137,8 +141,12 @@ myApp.displayScore = function() {
 myApp.nextQuestion = function() {
   $(".next").on("click", function() {
     myApp.getQuote();
-    $('.guess').removeAttr('disabled');
-    $('.next').attr('disabled', 'disabled');
+    $('.guess')
+      .removeAttr('disabled')
+      .removeClass('disabled');
+    $('.next')
+      .attr('disabled', 'disabled')
+      .addClass('disabled');
     $('.guess')
       .children('span')
       .removeClass('subtractScore')
@@ -160,24 +168,25 @@ myApp.endGame = function() {
   $(".content").hide(1000, "swing");
   $(".results").show(1000, "swing");
   $(".playAgain").removeClass("hidden");
-  $(".next")
-    // .attr('disabled', 'disabled')
-    .addClass("hidden");
+  $(".next").addClass("hidden");
 };
 
 // setup function
 myApp.setup = function() {
   $(".content").show();
   $(".results").hide();
-  $(".guess").removeAttr("disabled");
+  $(".guess")
+    .removeAttr("disabled")
+    .removeClass("disabled");
   $(".guess")
     .children("span")
     .removeClass("subtractScore")
     .removeClass("addScore")
     .text("");
   $(".next")
+    .attr("disabled", "disabled")
     .removeClass("hidden")
-    .attr("disabled", "disabled");
+    .addClass("disabled");
   $(".playAgain").addClass("hidden");
   myApp.score = 0;
   myApp.usedQuotes = [];
