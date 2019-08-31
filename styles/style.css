@@ -231,7 +231,7 @@ h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #170A1C;
+  color: #170a1c;
   font-family: "Roboto", sans-serif;
 }
 
@@ -239,7 +239,7 @@ h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   line-height: 6rem;
-  color: #170A1C;
+  color: #170a1c;
   font-family: "Roboto", sans-serif;
 }
 
@@ -254,7 +254,7 @@ h4 {
   font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   line-height: 5rem;
-  color: #170A1C;
+  color: #170a1c;
   font-family: "Roboto", sans-serif;
   padding-bottom: 10px;
 }
@@ -286,7 +286,7 @@ span {
   font-family: "Libre Baskerville", serif;
   font-size: 3.6rem;
   line-height: 5rem;
-  color: #170A1C;
+  color: #170a1c;
 }
 
 .wrapper {
@@ -328,7 +328,7 @@ button {
 }
 
 .guess rect {
-  stroke: #170A1C;
+  stroke: #170a1c;
   fill: none;
   stroke-width: 4;
   stroke-dasharray: 422, 0;
@@ -339,7 +339,7 @@ button {
 .guess:hover,
 .guess:focus {
   background: #ddd0d0;
-  color: #170A1C;
+  color: #170a1c;
   letter-spacing: 1px;
 }
 
@@ -357,7 +357,34 @@ button {
 }
 
 .trump {
-  color: #7E52A0;
+  color: #7e52a0;
+}
+
+.nextQuestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nextQuestion .next {
+  height: 50px;
+  width: 110px;
+}
+
+.nextQuestion .playAgain {
+  height: 50px;
+  padding: 0 20px;
+  background: #e2c521;
 }
 
 .scoreChange {
@@ -533,12 +560,12 @@ header {
 }
 
 h1 {
-  text-shadow: -2px -2px #7E52A0;
-  border-top: 2px solid #170A1C;
+  text-shadow: -2px -2px #7e52a0;
+  border-top: 2px solid #170a1c;
 }
 
 h2 {
-  border-bottom: 2px solid #170A1C;
+  border-bottom: 2px solid #170a1c;
 }
 
 .hidden {
@@ -562,23 +589,23 @@ main {
 
 @-webkit-keyframes headExpand {
   from {
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
 @keyframes headExpand {
   from {
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
@@ -586,14 +613,14 @@ main {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
@@ -601,14 +628,14 @@ main {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
@@ -616,14 +643,14 @@ main {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
@@ -631,14 +658,14 @@ main {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
-    filter: drop-shadow(10px -10px #228CDB) drop-shadow(-10px 10px #7E52A0);
+    -webkit-filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
+    filter: drop-shadow(10px -10px #228cdb) drop-shadow(-10px 10px #7e52a0);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
-    filter: drop-shadow(25px -25px #228CDB) drop-shadow(-25px 25px #7E52A0);
+    -webkit-filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
+    filter: drop-shadow(25px -25px #228cdb) drop-shadow(-25px 25px #7e52a0);
   }
 }
 
@@ -704,7 +731,7 @@ blockquote::before,
 blockquote::after {
   font-size: 12rem;
   position: absolute;
-  text-shadow: 3px 3px #228CDB, -3px -3px #7E52A0;
+  text-shadow: 3px 3px #228cdb, -3px -3px #7e52a0;
 }
 
 blockquote::before {
@@ -779,7 +806,7 @@ blockquote::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #170A1C;
+  border: 1px solid #170a1c;
   background: darkgrey;
   padding: 20px 80px;
 }
@@ -798,7 +825,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #170A1C;
+  background: #170a1c;
   height: 5vh;
 }
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    
     <!-- Link to Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Roboto:500&display=swap"
@@ -20,17 +23,22 @@
     <title>Kanye vs. Trump</title>
   </head>
   <body>
+    <!--Header Section-->
     <header>
       <div class="wrapper">
         <h1>KANYE vs. TRUMP</h1>
         <h2>Who said it?</h2>
       </div>
     </header>
-    
+
+    <!--main content/game area-->
     <main>
       <div class="wrapper">
         <div class="kanyeImage headShots">
-          <img src="./assets/kanye_720.png" alt="Cartoon headshot of Kanye.">
+          <img
+            src="./assets/kanye_720.png"
+            alt="Cartoon headshot of Kanye West."
+          />
         </div>
 
         <section class="content">
@@ -38,11 +46,11 @@
             <h3><!--dynamic Quote content here--></h3>
           </blockquote>
 
+          <!--score and guess buttons-->
           <div class="userInput">
-
             <button class="guess kanye" id="kanye">
               <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
               </svg>
               Kanye
               <span class="scoreChange"></span>
@@ -57,7 +65,7 @@
             </div>
             <button class="guess trump" id="trump">
               <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
               </svg>
               Trump
               <span class="scoreChange"></span>
@@ -84,16 +92,22 @@
           </div>
         </section>
 
+        <!--Next Quote and Play Again buttons-->
         <div class="nextQuestion">
           <button class="next" id="next" disabled="disabled">Next</button>
           <button class="playAgain hidden" id="playAgain">Play Again</button>
         </div>
 
         <div class="trumpImage headShots">
-          <img src="./assets/trump_720.png" alt="Orange babe blowing a kiss.">
+          <img
+            src="./assets/trump_720.png"
+            alt="Cartoon headshot of Donald Trump."
+          />
         </div>
       </div>
+      <!--end of wrapper-->
     </main>
+    <!--end of main section-->
 
     <footer>
       <div class="wrapper">
@@ -103,11 +117,11 @@
         </p>
       </div>
     </footer>
-    <!--end of wrapper-->
 
     <!-- Credits -->
     <!-- David Connor for the sweeet button effect -->
 
+    <!--jquery and javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
