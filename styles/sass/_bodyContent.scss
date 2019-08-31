@@ -4,7 +4,6 @@
 }
 
 main {
-  // background: $background;
   position: relative;
   height: 70vh;
 }
@@ -18,6 +17,75 @@ main {
   animation: headExpand 1.5s ease infinite alternate;
 }
 
+.kanyeImage {
+  left: 50px;
+
+  &:hover,
+  &:focus {
+    animation: kanyeSpin 1s infinite linear;
+  }
+}
+
+.trumpImage {
+  right: 50px;
+
+  &:hover,
+  &:focus {
+    animation: trumpSpin 1s infinite linear;
+  }
+}
+
+//quote and score styling
+.content {
+  @include flex(column, space-between);
+  width: 100%;
+  height: 60vh; // also change .results in partial
+}
+
+blockquote {
+  position: relative;
+  @include flex(column, center);
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 33px;
+  min-height: 200px;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 12rem;
+  position: absolute;
+  text-shadow: 3px 3px $secondary, -3px -3px $tertiary;
+}
+
+blockquote::before {
+  content: "“";
+  top: 40px;
+  left: -20px;
+}
+
+blockquote::after {
+  content: "”";
+  bottom: -30px;
+  right: -20px;
+}
+
+.userInput {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.score {
+  @include flex(column);
+}
+
+// =======================
+// == Keyframes
+// =======================
 @keyframes headExpand {
   from {
     -webkit-filter: drop-shadow(10px -10px $secondary)
@@ -59,70 +127,4 @@ main {
       drop-shadow(-25px 25px $tertiary);
     filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
   }
-}
-
-.kanyeImage {
-  left: 50px;
-
-  &:hover,
-  &:focus {
-    animation: kanyeSpin 1s infinite linear;
-  }
-}
-
-.trumpImage {
-  right: 50px;
-
-  &:hover,
-  &:focus {
-    animation: trumpSpin 1s infinite linear;
-  }
-}
-
-//quote and score styling
-.content {
-  @include flex(column, space-between);
-  width: 100%;
-  height: 60vh; // also change .results in partial
-}
-
-blockquote {
-  position: relative;
-  @include flex(column, center);
-  width: 50%;
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px 30px;
-  min-height: 200px;
-}
-
-blockquote::before,
-blockquote::after {
-  font-size: 12rem;
-  position: absolute;
-  text-shadow: 3px 3px $secondary, -3px -3px $tertiary;
-}
-
-blockquote::before {
-  content: "“";
-  top: 40px;
-  left: -20px;
-}
-
-blockquote::after {
-  content: "”";
-  bottom: -30px;
-  right: -20px;
-}
-
-.userInput {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin-top: 40px;
-  padding-bottom: 40px;
-}
-
-.score {
-  @include flex(column);
 }

@@ -9,7 +9,8 @@ $incorrect: rgb(179, 6, 6);
 
 //fonts
 $header: "Lato", sans-serif;
-$body: "Libre Baskerville", serif;
+// $body: "Libre Baskerville", serif;
+$body: 'Cardo', serif;
 
 //mixins
 @mixin flex($direction, $justContent: center) {
