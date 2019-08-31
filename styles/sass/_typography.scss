@@ -6,17 +6,18 @@ html {
 
 //headers
 h1 {
-  @include fontStyle(8rem, 10rem, $main);
+  @include fontStyle(8rem, 10rem, #2c2f30);
   font-family: $header;
 }
 
 h2 {
-  @include fontStyle(4rem, 6rem, $main);
+  @include fontStyle(4rem, 6rem, $quaternary);
   font-family: $header;
+  text-transform: uppercase;
 }
 
 h3 {
-  @include fontStyle(2rem, 3.6rem, #000);
+  @include fontStyle(2rem, 3.6rem, #fff);
 }
 
 h4 {

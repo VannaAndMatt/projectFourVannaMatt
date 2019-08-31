@@ -231,23 +231,24 @@ h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #170a1c;
-  font-family: "Roboto", sans-serif;
+  color: #2c2f30;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   line-height: 6rem;
-  color: #170a1c;
-  font-family: "Roboto", sans-serif;
+  color: #f3e367;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   line-height: 3.6rem;
-  color: #000;
+  color: #fff;
 }
 
 h4 {
@@ -255,7 +256,7 @@ h4 {
   font-size: 4rem;
   line-height: 5rem;
   color: #170a1c;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   padding-bottom: 10px;
 }
 
@@ -270,7 +271,7 @@ footer {
   font-family: "Libre Baskerville", serif;
   font-size: 1.6rem;
   line-height: 3rem;
-  color: #e2c521;
+  color: #f3e367;
 }
 
 button {
@@ -278,7 +279,7 @@ button {
   font-size: 2.2rem;
   line-height: 3.8rem;
   color: #000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
 
@@ -316,7 +317,7 @@ button {
   height: 55px;
   width: 150px;
   position: relative;
-  background: #120816;
+  background: #f2e260;
 }
 
 .guess svg {
@@ -338,7 +339,7 @@ button {
 
 .guess:hover,
 .guess:focus {
-  background: #ddd0d0;
+  background: white;
   color: #170a1c;
   letter-spacing: 1px;
 }
@@ -353,11 +354,11 @@ button {
 }
 
 .kanye {
-  color: #e2c521;
+  color: #2c2f30;
 }
 
 .trump {
-  color: #7e52a0;
+  color: #2c2f30;
 }
 
 .nextQuestion {
@@ -384,7 +385,7 @@ button {
 .nextQuestion .playAgain {
   height: 50px;
   padding: 0 20px;
-  background: #e2c521;
+  background: #f3e367;
 }
 
 .scoreChange {
@@ -553,14 +554,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
   height: 25vh;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 h1 {
-  text-shadow: -2px -2px #7e52a0;
+  text-shadow: -2px -2px #fff;
   border-top: 2px solid #170a1c;
 }
 
@@ -573,7 +573,6 @@ h2 {
 }
 
 main {
-  background: #fff;
   position: relative;
   height: 70vh;
 }
@@ -825,7 +824,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #170a1c;
+  background: #2c2f30;
   height: 5vh;
 }
 
@@ -835,4 +834,9 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#6e7475), to(#a4aeaf));
+  background: linear-gradient(to bottom right, #6e7475, #a4aeaf);
 }
