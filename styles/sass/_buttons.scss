@@ -13,8 +13,6 @@ button {
   }
 
   &.disabled {
-    opacity: 0.3;
-
     svg {
       display: none;
     }
@@ -34,6 +32,11 @@ button {
   height: 55px;
   width: 150px;
   background: $quaternary;
+
+  &.disabled {
+    background: rgba($quaternary, 0.3);
+    color: rgba($main, 0.3);
+  }
   
   &:not(.disabled):hover,
   &:not(.disabled):focus {
@@ -57,6 +60,11 @@ button {
   background: darken($light, 15%);
   height: 50px;
   width: 110px;
+
+  &.disabled {
+    background: rgba($light, 0.3);
+    color: rgba($main, 0.3);
+  }
   
   &:not(.disabled):hover,
   &:not(.disabled):focus {

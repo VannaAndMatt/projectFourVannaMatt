@@ -20,8 +20,9 @@ $body: 'Cardo', serif;
   align-items: center;
 }
 
-@mixin fontStyle($size, $lh, $color) {
-  font-family: $body;
+@mixin fontStyle($size, $lh, $color, $fam: $body, $weight: 400) {
+  font-family: $fam;
+  font-weight: $weight;
   font-size: $size;
   line-height: $lh;
   color: $color;

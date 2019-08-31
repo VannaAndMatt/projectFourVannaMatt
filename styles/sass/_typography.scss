@@ -6,15 +6,11 @@ html {
 
 //headers
 h1 {
-  @include fontStyle(8rem, 10rem, $main);
-  font-family: $header;
-  font-weight: 900;
+  @include fontStyle(8rem, 10rem, $main, $header, 900);
 }
 
 h2 {
-  @include fontStyle(4rem, 6rem, $quaternary);
-  font-family: $header;
-  font-weight: 400;
+  @include fontStyle(4rem, 6rem, $quaternary, $header);
   text-transform: uppercase;
 }
 
@@ -23,8 +19,7 @@ h3 {
 }
 
 h4 {
-  @include fontStyle(4rem, 5rem, $main);
-  font-family: $header;
+  @include fontStyle(4rem, 5rem, $main, $header);
   padding-bottom: 10px;
 }
 
@@ -34,16 +29,21 @@ main {
 }
 
 footer {
-  @include fontStyle(1.7rem, 3rem, $quaternary);
-  font-family: $header;
-  font-weight: 400;
+  @include fontStyle(1.7rem, 3rem, $quaternary, $header);
 }
 
 button {
-  @include fontStyle(2.2rem, 3.8rem, $main);
-  font-family: $header;
-  font-weight: 900;
+  @include fontStyle(2.2rem, 3.8rem, $main, $header, 900);
   text-transform: uppercase;
+}
+
+.scoreChange {
+  @include fontStyle(3rem, 5rem, $main, $header);
+}
+
+.currentScore {
+  @include fontStyle(3rem, 4rem, $main, $header);
+  text-shadow: -1px 1px $light;
 }
 
 span {
@@ -54,7 +54,3 @@ i {
   @include fontStyle(4rem, 5rem, $secondary);
 }
 
-.currentScore {
-  @include fontStyle(3rem, 4rem, $main);
-  text-shadow: -1px 1px $light;
-}
