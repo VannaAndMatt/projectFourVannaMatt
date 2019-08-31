@@ -3,7 +3,7 @@ $main: #181a1a;
 $secondary: #228cdb; //#f311ff;
 $tertiary: #7e52a0; // #bf0a30;//#70f7f9;
 $quaternary: #f3e367;
-$background: #6e7475;// light rose #ddd0d0; // pinkish: #f0d5d8;
+$background: #6e7475; // light rose #ddd0d0; // pinkish: #f0d5d8;
 $light: #fff;
 $correct: #078627;
 $incorrect: #b30606;
@@ -11,7 +11,7 @@ $incorrect: #b30606;
 //fonts
 $header: "Lato", sans-serif;
 // $body: "Libre Baskerville", serif;
-$body: 'Cardo', serif;
+$body: "Cardo", serif;
 
 //mixins
 @mixin flex($direction, $justContent: center) {
@@ -26,4 +26,36 @@ $body: 'Cardo', serif;
   font-size: $size;
   line-height: $lh;
   color: $color;
+}
+
+//responsive mixins
+@mixin smallPhone {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin regPhones {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin tabletToDesktop {
+  @media (max-width: 940px) {
+    @content;
+  }
+}
+@mixin regDesktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin largeDesktop {
+  @media (min-width: 1201px) {
+    @content;
+  }
 }
