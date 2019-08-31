@@ -1,13 +1,13 @@
 //colours
-$main: #170A1C;
-$secondary: #228CDB;//#f311ff;
-$tertiary:#7E52A0; // #bf0a30;//#70f7f9;
+$main: #170a1c;
+$secondary: #228cdb; //#f311ff;
+$tertiary: #7e52a0; // #bf0a30;//#70f7f9;
 $quaternary: #e2c521;
-$background: #fff;// light rose #ddd0d0; // pinkish: #f0d5d8;
+$background: #fff; // light rose #ddd0d0; // pinkish: #f0d5d8;
 
 //fonts
-$header: 'Roboto', sans-serif;
-$body: 'Libre Baskerville', serif;
+$header: "Roboto", sans-serif;
+$body: "Libre Baskerville", serif;
 
 //mixins
 @mixin flex($direction, $justContent: center) {
