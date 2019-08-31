@@ -53,17 +53,15 @@ button {
   left: 0;
   right: 0;
   // bottom: 0;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 }
 
 .addScore {
-  color: #0cb10c;
-  top: -50px;
+  animation: correctScoreFade linear 1.5s forwards;
 }
 
 .subtractScore {
-  color: #b30606;
-  top: 65px;
+  animation: incorrectScoreFade linear 1.5s forwards;
 }
 
 .nextQuestion {
@@ -78,6 +76,64 @@ button {
     height: 50px;
     padding: 0 20px;
     background: $quaternary;
+  }
+}
+
+
+// =======================
+// == Keyframes
+// =======================
+@keyframes correctScoreFade {
+  0% {
+    color: rgba($correct,1);
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: rgba($correct,1);
+    top: -50px;
+  }
+  20% {
+    color: rgba($correct,1);
+    top: -60px;
+  }
+  25%, 35% {
+    color: rgba($correct,1);
+    top: -43px;
+  }
+  30% {
+    color: rgba($correct,1);
+    top: -55px;
+  }
+  100% {
+    color: rgba($correct,0);
+    top: -50px;
+  }
+}
+
+@keyframes incorrectScoreFade {
+  0% {
+    color: rgba($incorrect,1);
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: rgba($incorrect,1);
+    top: 65px;
+  }
+  20% {
+    color: rgba($incorrect,1);
+    top: 75px;
+  }
+  25%, 35% {
+    color: rgba($incorrect,1);
+    top: 55px;
+  }
+  30% {
+    color: rgba($incorrect,1);
+    top: 70px;
+  }
+  100% {
+    color: rgba($incorrect,0);
+    top: 65px;
   }
 }
 

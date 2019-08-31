@@ -106,11 +106,13 @@ myApp.checkInput = function(selectedGuess) {
     $(`.${selectedGuess}`).children('span')
       .addClass('addScore')
       .text('+10');
+    $(`.${selectedGuess}Image`).children().addClass('animated bounce');
   } else {
     myApp.score -= 10;
     $(`.${selectedGuess}`).children('span')
       .addClass('subtractScore')
       .text('-10');
+    $(`.${selectedGuess}Image`).children().addClass('animated shake');
   }
 
   myApp.displayScore();
@@ -134,6 +136,10 @@ myApp.nextQuestion = function() {
       .removeClass('subtractScore')
       .removeClass('addScore')
       .text('');
+    $('.headShots').children()
+      .removeClass('animated')
+      .removeClass('bounce')
+      .removeClass('shake');
   });
 };
 
