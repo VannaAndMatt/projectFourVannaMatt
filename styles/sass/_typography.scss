@@ -32,6 +32,11 @@ footer {
   @include fontStyle(1.7rem, 3rem, $quaternary, $header);
 }
 
+blockquote::before,
+blockquote::after {
+  font-size:12rem;
+}
+
 button {
   @include fontStyle(2.2rem, 3.8rem, $main, $header, 900);
   text-transform: uppercase;

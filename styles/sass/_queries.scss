@@ -1,51 +1,181 @@
 //Large Desktops
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
   h1 {
-  @include fontStyle(10rem, 12rem, $main, $header, 900);
+    font-size: 10rem;
+    line-height: 12rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+
+  h3 {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+  }
+
+  h4 {
+    font-size:5rem;
+    line-height:6rem;
+  }
+
+  main {
+    font-size:2.4rem;
+    line-height:4rem;
+  }
+
+  footer {
+   font-size:2rem;
+    line-height:3rem;
+  }
+
+  button {
+    font-size:2.6rem;
+    line-height:3.8rem;
+  }
 }
 
-h2 {
-  @include fontStyle(6rem, 8rem, $quaternary, $header);
-  text-transform: uppercase;
+//Portrait tablet and small desktops
+@media (max-width: 940px) {
+  blockquote {
+    width: 60%;
+  }
+  .userInput {
+    width: 70%;
+  }
 }
+//Landscape phone to portrait tablet
+@media (max-width: 768px) {
 
-h3 {
-  @include fontStyle(3.8rem, 4.6rem, $light);
-}
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
 
-h4 {
-  @include fontStyle(5rem, 6rem, $main, $header);
-  padding-bottom: 10px;
-}
+  h2 {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+  .content {
+    height: 45vh;
+  }
 
-//non header styling
-main {
-  @include fontStyle(2.4rem, 4rem, $main);
+  .headShots {
+    height: auto;
+  }
 }
+//Landscape phones and down
+@media (max-width: 480px) {
 
-footer {
-  @include fontStyle(2rem, 3rem, $quaternary, $header);
-}
+  header {
+    height: 15vh;
+  }
 
-button {
-  @include fontStyle(2.6rem, 3.8rem, $main, $header, 900);
-  text-transform: uppercase;
-}
-}
+  h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 
-//Portrait tablet and small desktops 
-@media (max-width: 940px){
+  h2 {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
 
-}
-//Landscape phone to portrait tablet 
-@media (max-width: 768px){
+  h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 
-}
-//Landscape phones and down 
-@media (max-width: 480px){
+  main {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    height: 80vh
+  }
+
+  .guess {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    height: 45px;
+    width: 100px;
+  }
+
+  footer {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  blockquote {
+    width: 80%;
+  }
+
+  .userInput {
+    width: 100%;
+  }
+
+  .finalScore {
+    padding: 20px 40px;
+  }
 
 }
 //Even smaller
-@media(max-width: 320px){
+@media (max-width: 380px) {
+  h1 {
+    font-size: 3rem;
+  }
 
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  main {
+    @include flex(column, space-between)
+  }
+
+  blockquote {
+    margin-top: 60px;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
 }
+
+//teeny phones
+@media (max-width: 320px) {
+.score p:first-child {
+  font-size: 1.4rem;
+}
+.guess {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    height: 35px;
+    width: 85px;
+  }
+
+  .headShots {
+    bottom: 25px;
+  }
+
+  blockquote::before, blockquote::after {
+    font-size: 9rem;
+  }
+
+  blockquote::before {
+    top: 25px;
+  }
+
+  blockquote::after {
+    bottom: -35px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
