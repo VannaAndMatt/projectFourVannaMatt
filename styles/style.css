@@ -857,6 +857,11 @@ footer {
 
 footer a {
   text-decoration: none;
+  color: #228cdb;
+}
+
+footer a:hover, footer a:focus {
+  color: #7e52a0;
 }
 
 img {
