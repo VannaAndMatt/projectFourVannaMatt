@@ -18,9 +18,5 @@ img {
 }
 
 body {
-  background: linear-gradient(to bottom right, #6e7475, #a4aeaf);
-  // background: url(../assets/mainBackground.jpg);
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background: linear-gradient(to bottom right, $background, #a4aeaf);
 }

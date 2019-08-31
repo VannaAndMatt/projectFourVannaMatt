@@ -1,5 +1,5 @@
 footer {
   @include flex(row);
-  background: #2c2f30;
+  background: $dark;
   height: 5vh;
 }

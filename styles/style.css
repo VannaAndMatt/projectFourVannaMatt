@@ -231,7 +231,7 @@ h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #2c2f30;
+  color: #232525;
   font-family: "Lato", sans-serif;
 }
 
@@ -288,6 +288,14 @@ span {
   font-size: 3.6rem;
   line-height: 5rem;
   color: #170a1c;
+}
+
+.currentScore {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #000;
+  text-shadow: -1px 1px #fff;
 }
 
 .wrapper {
@@ -353,12 +361,9 @@ button {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.kanye {
-  color: #2c2f30;
-}
-
-.trump {
-  color: #2c2f30;
+.kanye, .trump {
+  color: #232525;
+  font-weight: bold;
 }
 
 .nextQuestion {
@@ -429,59 +434,59 @@ button {
 .nextQuestion .playAgain {
   height: 50px;
   padding: 0 20px;
-  background: #e2c521;
+  background: #f3e367;
 }
 
 @-webkit-keyframes correctScoreFade {
   0% {
-    color: #0cb10c;
+    color: #078627;
     top: 0;
   }
   15%, 45%, 65% {
-    color: #0cb10c;
+    color: #078627;
     top: -50px;
   }
   20% {
-    color: #0cb10c;
+    color: #078627;
     top: -60px;
   }
   25%, 35% {
-    color: #0cb10c;
+    color: #078627;
     top: -43px;
   }
   30% {
-    color: #0cb10c;
+    color: #078627;
     top: -55px;
   }
   100% {
-    color: rgba(12, 177, 12, 0);
+    color: rgba(7, 134, 39, 0);
     top: -50px;
   }
 }
 
 @keyframes correctScoreFade {
   0% {
-    color: #0cb10c;
+    color: #078627;
     top: 0;
   }
   15%, 45%, 65% {
-    color: #0cb10c;
+    color: #078627;
     top: -50px;
   }
   20% {
-    color: #0cb10c;
+    color: #078627;
     top: -60px;
   }
   25%, 35% {
-    color: #0cb10c;
+    color: #078627;
     top: -43px;
   }
   30% {
-    color: #0cb10c;
+    color: #078627;
     top: -55px;
   }
   100% {
-    color: rgba(12, 177, 12, 0);
+    color: rgba(7, 134, 39, 0);
     top: -50px;
   }
 }
@@ -805,9 +810,13 @@ blockquote::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #170a1c;
-  background: darkgrey;
+  border: 2px solid #170a1c;
+  background: #fff;
   padding: 20px 80px;
+}
+
+.results .currentScore {
+  color: #228cdb;
 }
 
 footer {
@@ -824,7 +833,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #2c2f30;
+  background: #232525;
   height: 5vh;
 }
 
