@@ -231,7 +231,7 @@ h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 8rem;
   line-height: 10rem;
-  color: #fff;
+  color: #2c2f30;
   font-family: "Lato", sans-serif;
 }
 
@@ -427,12 +427,11 @@ header {
 }
 
 h1 {
-  text-shadow: -2px -2px #7e52a0;
+  text-shadow: -2px -2px #fff;
   border-top: 2px solid #170a1c;
 }
 
 h2 {
-  text-shadow: 2px 2px #228cdb;
   border-bottom: 2px solid #170a1c;
 }
 

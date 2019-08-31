@@ -7,11 +7,11 @@ header {
 }
 
 h1 {
-  text-shadow: -2px -2px $tertiary;
+  text-shadow: -2px -2px #fff;
   border-top: 2px solid $main;
 }
 
 h2 {
-  text-shadow: 2px 2px $secondary;
+  // text-shadow: 2px 2px $secondary;
   border-bottom: 2px solid $main;
 }
