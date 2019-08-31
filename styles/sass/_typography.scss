@@ -50,6 +50,10 @@ span {
   @include fontStyle(3.6rem, 5rem, $main);
 }
 
+i {
+  @include fontStyle(4rem, 5rem, $secondary);
+}
+
 .currentScore {
   @include fontStyle(3rem, 4rem, $main);
   text-shadow: -1px 1px $light;
