@@ -2,4 +2,8 @@ footer {
   @include flex(row);
   background: $main;
   height: 5vh;
+
+    a {
+      text-decoration: none;
+    }
 }

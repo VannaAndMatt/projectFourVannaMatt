@@ -14,3 +14,15 @@
 .results .currentScore {
   color: $secondary;
 }
+
+.tweetContainer {
+  @include flex(column);
+
+    p {
+      padding-top: 20px;
+    }
+
+    a{
+  text-decoration: none;
+    }
+}

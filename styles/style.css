@@ -295,6 +295,13 @@ span {
   color: #181a1a;
 }
 
+i {
+  font-family: "Cardo", serif;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #228cdb;
+}
+
 .currentScore {
   font-family: "Cardo", serif;
   font-size: 3rem;
@@ -823,6 +830,30 @@ blockquote::after {
   color: #228cdb;
 }
 
+.tweetContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweetContainer p {
+  padding-top: 20px;
+}
+
+.tweetContainer a {
+  text-decoration: none;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +870,10 @@ footer {
           align-items: center;
   background: #181a1a;
   height: 5vh;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 img {
