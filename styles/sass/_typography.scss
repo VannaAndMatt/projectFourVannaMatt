@@ -8,16 +8,18 @@ html {
 h1 {
   @include fontStyle(8rem, 10rem, $dark);
   font-family: $header;
+  font-weight: 900;
 }
 
 h2 {
   @include fontStyle(4rem, 6rem, $quaternary);
   font-family: $header;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 h3 {
-  @include fontStyle(2rem, 3.6rem, #fff);
+  @include fontStyle(2.4rem, 3.6rem, #fff);
 }
 
 h4 {
@@ -32,12 +34,15 @@ main {
 }
 
 footer {
-  @include fontStyle(1.6rem, 3rem, $quaternary);
+  @include fontStyle(1.7rem, 3rem, $quaternary);
+  font-family: $header;
+  font-weight: 400;
 }
 
 button {
   @include fontStyle(2.2rem, 3.8rem, #000);
   font-family: $header;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
