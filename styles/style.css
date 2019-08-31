@@ -393,18 +393,151 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .addScore {
-  color: #0cb10c;
-  top: -50px;
+  -webkit-animation: correctScoreFade linear 1.5s forwards;
+          animation: correctScoreFade linear 1.5s forwards;
 }
 
 .subtractScore {
-  color: #b30606;
-  top: 65px;
+  -webkit-animation: incorrectScoreFade linear 1.5s forwards;
+          animation: incorrectScoreFade linear 1.5s forwards;
+}
+
+.nextQuestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nextQuestion .next {
+  height: 50px;
+  width: 110px;
+}
+
+.nextQuestion .playAgain {
+  height: 50px;
+  padding: 0 20px;
+  background: #e2c521;
+}
+
+@-webkit-keyframes correctScoreFade {
+  0% {
+    color: #0cb10c;
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: #0cb10c;
+    top: -50px;
+  }
+  20% {
+    color: #0cb10c;
+    top: -60px;
+  }
+  25%, 35% {
+    color: #0cb10c;
+    top: -43px;
+  }
+  30% {
+    color: #0cb10c;
+    top: -55px;
+  }
+  100% {
+    color: rgba(12, 177, 12, 0);
+    top: -50px;
+  }
+}
+
+@keyframes correctScoreFade {
+  0% {
+    color: #0cb10c;
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: #0cb10c;
+    top: -50px;
+  }
+  20% {
+    color: #0cb10c;
+    top: -60px;
+  }
+  25%, 35% {
+    color: #0cb10c;
+    top: -43px;
+  }
+  30% {
+    color: #0cb10c;
+    top: -55px;
+  }
+  100% {
+    color: rgba(12, 177, 12, 0);
+    top: -50px;
+  }
+}
+
+@-webkit-keyframes incorrectScoreFade {
+  0% {
+    color: #b30606;
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: #b30606;
+    top: 65px;
+  }
+  20% {
+    color: #b30606;
+    top: 75px;
+  }
+  25%, 35% {
+    color: #b30606;
+    top: 55px;
+  }
+  30% {
+    color: #b30606;
+    top: 70px;
+  }
+  100% {
+    color: rgba(179, 6, 6, 0);
+    top: 65px;
+  }
+}
+
+@keyframes incorrectScoreFade {
+  0% {
+    color: #b30606;
+    top: 0;
+  }
+  15%, 45%, 65% {
+    color: #b30606;
+    top: 65px;
+  }
+  20% {
+    color: #b30606;
+    top: 75px;
+  }
+  25%, 35% {
+    color: #b30606;
+    top: 55px;
+  }
+  30% {
+    color: #b30606;
+    top: 70px;
+  }
+  100% {
+    color: rgba(179, 6, 6, 0);
+    top: 65px;
+  }
 }
 
 header {

@@ -104,15 +104,21 @@ myApp.checkInput = function(selectedGuess) {
     myApp.score += 10;
     myApp.correctAnswers++;
     $(`.${selectedGuess}`)
-      .children("span")
-      .addClass("addScore")
-      .text("+10");
+      .children('span')
+      .addClass('addScore')
+      .text('+10');
+    $(`.${selectedGuess}Image`)
+      .children()
+      .addClass('animated bounce');
   } else {
     myApp.score -= 10;
     $(`.${selectedGuess}`)
-      .children("span")
-      .addClass("subtractScore")
-      .text("-10");
+      .children('span')
+      .addClass('subtractScore')
+      .text('-10');
+    $(`.${selectedGuess}Image`)
+      .children()
+      .addClass('animated shake');
   }
 
 //If statement to end game once max questions are reached
@@ -131,13 +137,18 @@ myApp.displayScore = function() {
 myApp.nextQuestion = function() {
   $(".next").on("click", function() {
     myApp.getQuote();
-    $(".guess").removeAttr("disabled");
-    $(".next").attr("disabled", "disabled");
-    $(".guess")
-      .children("span")
-      .removeClass("subtractScore")
-      .removeClass("addScore")
-      .text("");
+    $('.guess').removeAttr('disabled');
+    $('.next').attr('disabled', 'disabled');
+    $('.guess')
+      .children('span')
+      .removeClass('subtractScore')
+      .removeClass('addScore')
+      .text('');
+    $('.headShots')
+      .children()
+      .removeClass('animated')
+      .removeClass('bounce')
+      .removeClass('shake');
   });
 };
 
