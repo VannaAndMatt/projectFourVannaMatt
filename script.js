@@ -70,8 +70,8 @@ myApp.evalPromise = function(promise) {
     });
 
     // Check length of quote because we don't wanna break container
-    const tooLong = newQuote.split(' ').length;
-    console.log(tooLong);
+    const tooLong = newQuote.split(" ").length;
+    // console.log(tooLong);
 
     if (uniqueQuote && tooLong <= 28) {
       myApp.usedQuotes.push(newQuote);
@@ -85,15 +85,15 @@ myApp.evalPromise = function(promise) {
 
 //Dynamically add quote to html function
 myApp.displayQuote = function(fakeNews) {
-  $('h3').html(`${fakeNews}`);
+  $("h3").html(`${fakeNews}`);
 };
 
 //function to map input to result function
 myApp.userInput = function() {
-  $('.guess').on('click', function() {
-    const selectedGuess = $(this).attr('id');
-    $('.guess').attr('disabled', 'disabled');
-    $('.next').removeAttr('disabled');
+  $(".guess").on("click", function() {
+    const selectedGuess = $(this).attr("id");
+    $(".guess").attr("disabled", "disabled");
+    $(".next").removeAttr("disabled");
     myApp.checkInput(selectedGuess);
   });
 };
@@ -103,16 +103,19 @@ myApp.checkInput = function(selectedGuess) {
   if (selectedGuess === myApp.author) {
     myApp.score += 10;
     myApp.correctAnswers++;
-    $(`.${selectedGuess}`).children('span')
-      .addClass('addScore')
-      .text('+10');
+    $(`.${selectedGuess}`)
+      .children("span")
+      .addClass("addScore")
+      .text("+10");
   } else {
     myApp.score -= 10;
-    $(`.${selectedGuess}`).children('span')
-      .addClass('subtractScore')
-      .text('-10');
+    $(`.${selectedGuess}`)
+      .children("span")
+      .addClass("subtractScore")
+      .text("-10");
   }
 
+//If statement to end game once max questions are reached
   myApp.displayScore();
   if (myApp.questionCount === myApp.questionMax) {
     myApp.endGame();
@@ -121,46 +124,50 @@ myApp.checkInput = function(selectedGuess) {
 
 //display score dynamically function
 myApp.displayScore = function() {
-  $('.currentScore').html(myApp.score);
+  $(".currentScore").html(myApp.score);
 };
 
 //function to call next question
 myApp.nextQuestion = function() {
-  $('.next').on('click', function() {
+  $(".next").on("click", function() {
     myApp.getQuote();
-    $('.guess').removeAttr('disabled');
-    $('.next').attr('disabled', 'disabled');
-    $('.guess').children('span')
-      .removeClass('subtractScore')
-      .removeClass('addScore')
-      .text('');
+    $(".guess").removeAttr("disabled");
+    $(".next").attr("disabled", "disabled");
+    $(".guess")
+      .children("span")
+      .removeClass("subtractScore")
+      .removeClass("addScore")
+      .text("");
   });
 };
 
 // end game function
 myApp.endGame = function() {
-  $('.correctAnswers').text(`You got ${myApp.correctAnswers}/${myApp.questionMax} questions correct!`);
-  $('.content').hide(1000, 'swing');
-  $('.results').show(1000, 'swing');
-  $('.playAgain').removeClass('hidden');
-  $('.next')
+  $(".correctAnswers").text(
+    `You got ${myApp.correctAnswers}/${myApp.questionMax} questions correct!`
+  );
+  $(".content").hide(1000, "swing");
+  $(".results").show(1000, "swing");
+  $(".playAgain").removeClass("hidden");
+  $(".next")
     // .attr('disabled', 'disabled')
-    .addClass('hidden');
+    .addClass("hidden");
 };
 
 // setup function
 myApp.setup = function() {
-  $('.content').show();
-  $('.results').hide();
-  $('.guess').removeAttr('disabled');
-  $('.guess').children('span')
-    .removeClass('subtractScore')
-    .removeClass('addScore')
-    .text('');
-  $('.next')
-    .removeClass('hidden')
-    .attr('disabled', 'disabled');
-  $('.playAgain').addClass('hidden');
+  $(".content").show();
+  $(".results").hide();
+  $(".guess").removeAttr("disabled");
+  $(".guess")
+    .children("span")
+    .removeClass("subtractScore")
+    .removeClass("addScore")
+    .text("");
+  $(".next")
+    .removeClass("hidden")
+    .attr("disabled", "disabled");
+  $(".playAgain").addClass("hidden");
   myApp.score = 0;
   myApp.usedQuotes = [];
   myApp.displayScore();
@@ -170,7 +177,7 @@ myApp.setup = function() {
 
 // play again function
 myApp.playAgain = function() {
-  $('.playAgain').on('click', function() {
+  $(".playAgain").on("click", function() {
     myApp.setup();
     myApp.getQuote();
   });
