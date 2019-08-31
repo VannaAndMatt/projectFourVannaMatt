@@ -332,24 +332,28 @@ i {
 
 button {
   border: none;
-}
-
-.guess {
-  height: 55px;
-  width: 150px;
   position: relative;
-  background: #f2e260;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
-.guess svg {
+button:not(.disabled) svg {
   position: absolute;
   width: 100%;
-  height: 55px;
+  height: 100%;
   left: 0;
   top: 0;
 }
 
-.guess rect {
+button.disabled {
+  opacity: 0.3;
+}
+
+button.disabled svg {
+  display: none;
+}
+
+button rect {
   stroke: #181a1a;
   fill: none;
   stroke-width: 4;
@@ -358,25 +362,22 @@ button {
   transition: all 0.35s linear;
 }
 
-.guess:hover,
-.guess:focus {
-  background: white;
-  color: #181a1a;
-  letter-spacing: 1px;
+.guess {
+  height: 55px;
+  width: 150px;
+  background: #f3e367;
 }
 
-.guess:hover rect,
-.guess:focus rect {
+.guess:not(.disabled):hover, .guess:not(.disabled):focus {
+  background: #fff;
+}
+
+.guess:not(.disabled):hover rect, .guess:not(.disabled):focus rect {
   stroke-width: 5;
-  stroke-dasharray: 15, 310;
+  stroke-dasharray: 15, 305;
   stroke-dashoffset: 48;
   -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.kanye, .trump {
-  color: #181a1a;
-  font-weight: bold;
 }
 
 .nextQuestion {
@@ -395,15 +396,40 @@ button {
           align-items: center;
 }
 
-.nextQuestion .next {
+.next {
+  background: #d9d9d9;
   height: 50px;
   width: 110px;
 }
 
-.nextQuestion .playAgain {
+.next:not(.disabled):hover, .next:not(.disabled):focus {
+  background: #fff;
+}
+
+.next:not(.disabled):hover rect, .next:not(.disabled):focus rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 240;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.playAgain {
   height: 50px;
   padding: 0 20px;
   background: #f3e367;
+}
+
+.playAgain:hover, .playAgain:focus {
+  background: #fff;
+}
+
+.playAgain:hover rect, .playAgain:focus rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 330;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .scoreChange {
@@ -421,33 +447,6 @@ button {
 .subtractScore {
   -webkit-animation: incorrectScoreFade linear 1.5s forwards;
           animation: incorrectScoreFade linear 1.5s forwards;
-}
-
-.nextQuestion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nextQuestion .next {
-  height: 50px;
-  width: 110px;
-}
-
-.nextQuestion .playAgain {
-  height: 50px;
-  padding: 0 20px;
-  background: #f3e367;
 }
 
 @-webkit-keyframes correctScoreFade {

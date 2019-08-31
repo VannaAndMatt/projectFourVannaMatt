@@ -1,21 +1,24 @@
 //global button styling
 button {
   border: none;
-}
-
-.guess {
-  height: 55px;
-  width: 150px;
   position: relative;
-  background: darken($quaternary, 1.5%);
+  transition: all 0.4s linear;
 
-  svg {
+  &:not(.disabled) svg {
     position: absolute;
     width: 100%;
-    height: 55px;
+    height: 100%;
     left: 0;
     top: 0;
   }
+
+  &.disabled {
+    opacity: 0.3;
+
+    svg {
+      display: none;
+    }
+  } 
 
   rect {
     stroke: $main;
@@ -26,38 +29,64 @@ button {
   }
 }
 
-.guess:hover,
-.guess:focus {
-  background: darken($light, 0);
-  color: $main;
-  letter-spacing: 1px;
-
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+// Guesses Styling
+.guess {
+  height: 55px;
+  width: 150px;
+  background: $quaternary;
+  
+  &:not(.disabled):hover,
+  &:not(.disabled):focus {
+    background: $light;
+  
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 305;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
 }
 
-//specific button styling
-.kanye, .trump {
-  color: $main;
-  font-weight: bold;
-}
-
+// Next Styling
 .nextQuestion {
   @include flex(row);
+}
 
-  .next {
-    height: 50px;
-    width: 110px;
+.next {
+  background: darken($light, 15%);
+  height: 50px;
+  width: 110px;
+  
+  &:not(.disabled):hover,
+  &:not(.disabled):focus {
+    background: $light;
+  
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 240;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
+}
 
-  .playAgain {
-    height: 50px;
-    padding: 0 20px;
-    background: $quaternary;
+// Play Again Styling
+.playAgain {
+  height: 50px;
+  padding: 0 20px;
+  background: $quaternary;
+  
+  &:hover,
+  &:focus {
+    background: $light;
+
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 330;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
 }
 
@@ -67,8 +96,6 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  // bottom: 0;
-  // transition: all 0.3s;
 }
 
 .addScore {
@@ -78,22 +105,6 @@ button {
 .subtractScore {
   animation: incorrectScoreFade linear 1.5s forwards;
 }
-
-.nextQuestion {
-  @include flex(row);
-
-  .next {
-  height: 50px;
-  width: 110px;
-  }
-
-  .playAgain {
-    height: 50px;
-    padding: 0 20px;
-    background: $quaternary;
-  }
-}
-
 
 // =======================
 // == Keyframes
