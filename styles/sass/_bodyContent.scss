@@ -56,7 +56,9 @@ blockquote {
 blockquote::before,
 blockquote::after {
   position: absolute;
-  text-shadow: 3px 3px $secondary, -3px -3px $tertiary;
+  text-shadow: 
+    3px 3px $secondary, 
+    -3px -3px $tertiary;
 }
 
 blockquote::before {
@@ -89,43 +91,61 @@ blockquote::after {
 // =======================
 @keyframes headExpand {
   from {
-    -webkit-filter: drop-shadow(10px -10px $secondary)
+    -webkit-filter: 
+      drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
+    filter: 
+      drop-shadow(10px -10px $secondary) 
+      drop-shadow(-10px 10px $tertiary);
   }
   to {
-    -webkit-filter: drop-shadow(25px -25px $secondary)
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary) 
+      drop-shadow(-25px 25px $tertiary);
   }
 }
 
 @keyframes kanyeSpin {
   from {
     transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px $secondary)
+    -webkit-filter: 
+      drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
+    filter: 
+      drop-shadow(10px -10px $secondary) 
+      drop-shadow(-10px 10px $tertiary);
   }
   to {
     transform: rotate(-360deg);
-    -webkit-filter: drop-shadow(25px -25px $secondary)
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary) 
+      drop-shadow(-25px 25px $tertiary);
   }
 }
 
 @keyframes trumpSpin {
   from {
     transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px $secondary)
+    -webkit-filter: 
+      drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
+    filter: 
+      drop-shadow(10px -10px $secondary) 
+      drop-shadow(-10px 10px $tertiary);
   }
   to {
     transform: rotate(360deg);
-    -webkit-filter: drop-shadow(25px -25px $secondary)
+    -webkit-filter: 
+      drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
+    filter: 
+      drop-shadow(25px -25px $secondary) 
+      drop-shadow(-25px 25px $tertiary);
   }
 }
