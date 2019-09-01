@@ -565,11 +565,6 @@ header {
 
 h1 {
   text-shadow: -2px -2px #fff;
-  border-top: 2px solid #181a1a;
-}
-
-h2 {
-  border-bottom: 2px solid #181a1a;
 }
 
 .hidden {
@@ -678,7 +673,7 @@ blockquote::after {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  margin-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 
@@ -1086,6 +1081,9 @@ footer a:hover, footer a:focus {
     line-height: 3rem;
     height: 80vh;
   }
+  .content {
+    height: 57vh;
+  }
   .guess {
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -1157,10 +1155,10 @@ footer a:hover, footer a:focus {
 
 @media (max-width: 380px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   h3 {
     font-size: 1.6rem;

@@ -159,7 +159,11 @@
   main {
     font-size: 1.6rem;
     line-height: 3rem;
-    height: 80vh
+    height: 80vh;
+  }
+
+  .content {
+    height: 57vh;
   }
 
   .guess {
@@ -212,11 +216,11 @@
 //Even smaller
 @media (max-width: 380px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   h3 {
