@@ -20,16 +20,6 @@ h1 {
     -6px -6px $tertiary,
     -7px -7px $tertiary,
     -8px -8px $tertiary;
-
-  // text-shadow: 
-  //   -1px -1px darken($tertiary, 30%),
-  //   -2px -2px darken($tertiary, 25%),
-  //   -3px -3px darken($tertiary, 20%),
-  //   -4px -4px darken($tertiary, 15%),
-  //   -5px -5px darken($tertiary, 10%),
-  //   -6px -6px darken($tertiary, 5%),
-  //   -7px -7px $tertiary,
-  //   -8px -8px $tertiary;
 }
 
 h2 {
@@ -65,6 +55,7 @@ footer {
 blockquote::before,
 blockquote::after {
   font-size: 12rem;
+  color: $main;
   text-shadow: 
     1px 1px $secondary, 
     2px 2px $secondary, 

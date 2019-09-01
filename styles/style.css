@@ -282,6 +282,7 @@ footer {
 blockquote::before,
 blockquote::after {
   font-size: 12rem;
+  color: #fff;
   text-shadow: 1px 1px #D83F87, 2px 2px #D83F87, 3px 3px #D83F87, -1px -1px #14A098, -2px -2px #14A098, -3px -3px #14A098;
 }
 
