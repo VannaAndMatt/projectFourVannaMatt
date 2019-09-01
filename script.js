@@ -101,6 +101,8 @@ myApp.evalPromise = function(promise) {
       newQuote = newQuoteObj.value;
     }
 
+    // Error Handling 
+    // Check for unique quote
     let uniqueQuote = true;
     myApp.usedQuotes.forEach(function(item) {
       if (newQuote === item) {
@@ -111,7 +113,12 @@ myApp.evalPromise = function(promise) {
     // Check length of quote because we don't wanna break container
     const tooLong = newQuote.split(" ").length;
 
-    if (uniqueQuote && tooLong <= 28) {
+    // Check for links in quote, we want to discard those ones
+    const textPos = newQuote.search("http");
+    console.log("text pos:", textPos);
+    console.log(newQuote);
+
+    if (uniqueQuote && tooLong <= 28 && textPos < 0) {
       myApp.usedQuotes.push(newQuote);
       myApp.questionCount++;
       myApp.displayQuote(newQuote);
@@ -140,7 +147,7 @@ myApp.userInput = function() {
     $(".guess").attr("disabled", "disabled")
     setTimeout(function(){ 
       $(".guess").removeAttr("disabled")
-    }, 1000);
+    }, 500);
   });
 };
 
