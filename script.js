@@ -115,8 +115,6 @@ myApp.evalPromise = function(promise) {
 
     // Check for links in quote, we want to discard those ones
     const textPos = newQuote.search("http");
-    console.log("text pos:", textPos);
-    console.log(newQuote);
 
     if (uniqueQuote && tooLong <= 28 && textPos < 0) {
       myApp.usedQuotes.push(newQuote);
