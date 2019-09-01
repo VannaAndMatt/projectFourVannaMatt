@@ -1,14 +1,19 @@
 //====================
-// Colours
+// OG Colours
 //====================
-$main: #181a1a;
-$secondary: #228cdb;
-$tertiary: #7e52a0;
-$quaternary: #f3e367;
-$background: #6e7475;
-$light: #fff;
-$correct: #078627;
-$incorrect: #b30606;
+// main colours
+$main: #fff;
+$secondary: #D83F87;
+$tertiary: #14A098;
+$quaternary: rgb(24, 65, 75);
+
+// background colours
+$background: #1e2020;
+$light: rgb(196, 194, 194);
+
+// score change colours
+$correct: #5ab471;
+$incorrect: #b10153;
 
 //====================
 // Fonts
