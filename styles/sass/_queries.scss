@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
   h1 {
     font-size: 6rem;
-    line-height: 8rem;
+    line-height: 7.8rem;
   }
 
   h2 {
@@ -128,8 +128,17 @@
   }
 } // end of 768px
 
-//Responsive resizing, no devices this size
-@media (max-width: 585px) {
+//Responsive resizing and Nexus Tablet
+@media (max-width: 600px) {
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .userInput {
+    width: 100%;
+  }
+
   footer {
     font-size: 1.2rem;
     line-height: 2rem;

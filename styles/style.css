@@ -965,7 +965,7 @@ footer a:hover, footer a:focus {
 @media (max-width: 768px) {
   h1 {
     font-size: 6rem;
-    line-height: 8rem;
+    line-height: 7.8rem;
   }
   h2 {
     font-size: 3.6rem;
@@ -1055,7 +1055,13 @@ footer a:hover, footer a:focus {
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 600px) {
+  h3 {
+    font-size: 2rem;
+  }
+  .userInput {
+    width: 100%;
+  }
   footer {
     font-size: 1.2rem;
     line-height: 2rem;
