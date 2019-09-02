@@ -192,7 +192,7 @@ myApp.checkInput = function(selectedGuess) {
       .removeClass('animated')
       .removeClass('bounce')
       .removeClass('shake');
-  }, 1500);
+  }, 1300);
 };
 
 //===========================
@@ -206,8 +206,8 @@ myApp.displayScore = function() {
 // End Game Function
 //===========================
 myApp.endGame = function() {
-  $(".correctAnswers").text(
-    `You got ${myApp.correctAnswers}/${myApp.questionMax} questions correct!`
+  $(".correctAnswers").html(
+    `You got <span class="answers">${myApp.correctAnswers}/${myApp.questionMax}</span> questions correct!`
   );
   $(".content").hide(1000, "swing");
   $(".results").show(1000, "swing");

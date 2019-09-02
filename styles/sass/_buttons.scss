@@ -5,6 +5,7 @@ button {
   border: none;
   position: relative;
   transition: all 0.4s linear;
+  background: $main;
 
   svg {
     position: absolute;
@@ -15,11 +16,22 @@ button {
   }
 
   rect {
-    stroke: $main;
     fill: none;
-    stroke-width: 4;
+    stroke-width: 7;
     stroke-dasharray: 422, 0;
     transition: all 0.35s linear;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba($light, 0);
+
+    rect {
+      stroke-width: 7;
+      stroke-dasharray: 15, 305;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
 }
 
@@ -29,18 +41,17 @@ button {
 .guess {
   height: 55px;
   width: 150px;
-  background: $quaternary;
-  
-  &:hover,
-  &:focus {
-    background: $light;
-  
-    rect {
-      stroke-width: 5;
-      stroke-dasharray: 15, 305;
-      stroke-dashoffset: 48;
-      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    }
+}
+
+.kanye {
+  rect {
+    stroke: $tertiary;
+  }
+}
+
+.trump {
+  rect {
+    stroke: $secondary;
   }
 }
 
@@ -55,11 +66,11 @@ button {
 }
 
 .addScore {
-  animation: correctScoreFade linear 1.5s forwards;
+  animation: correctScoreFade linear 1.3s forwards;
 }
 
 .subtractScore {
-  animation: incorrectScoreFade linear 1.5s forwards;
+  animation: incorrectScoreFade linear 1.3s forwards;
 }
 
 //====================
@@ -72,17 +83,15 @@ button {
 .playAgain {
   height: 50px;
   padding: 0 20px;
-  background: $quaternary;
+
+  rect {
+    stroke: $tertiary;
+  }
   
   &:hover,
   &:focus {
-    background: $light;
-
     rect {
-      stroke-width: 5;
       stroke-dasharray: 15, 330;
-      stroke-dashoffset: 48;
-      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }
