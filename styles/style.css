@@ -1069,6 +1069,17 @@ footer a:hover, footer a:focus {
   }
 }
 
+@media (max-width: 575px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6.2rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+  }
+}
+
 @media (max-width: 480px) {
   header {
     height: 15vh;
@@ -1190,6 +1201,9 @@ footer a:hover, footer a:focus {
   }
   blockquote {
     margin-top: 30px;
+  }
+  .finalScore {
+    padding: 20px 20px;
   }
   footer {
     font-size: 1rem;

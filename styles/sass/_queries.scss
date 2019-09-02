@@ -58,6 +58,7 @@
     font-size: 3.6rem;
     line-height: 5.4rem;
   }
+
   .content {
     height: 45vh;
   }
@@ -130,7 +131,6 @@
 
 //Responsive resizing and Nexus Tablet
 @media (max-width: 600px) {
-
   h3 {
     font-size: 2rem;
   }
@@ -143,7 +143,19 @@
     font-size: 1.2rem;
     line-height: 2rem;
   }
-} // end of 585px
+} // end of 600px
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6.2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+  }
+} // end of 575px
 
 //Landscape phones and down
 @media (max-width: 480px) {
@@ -244,6 +256,10 @@
 
   blockquote {
     margin-top: 30px;
+  }
+
+  .finalScore {
+    padding: 20px 20px;
   }
 
   footer {
