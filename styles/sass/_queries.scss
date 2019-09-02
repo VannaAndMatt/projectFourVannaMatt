@@ -243,6 +243,14 @@
 
 //teeny phones
 @media (max-width: 320px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
   .score p:first-child {
     font-size: 1.4rem;
   }
