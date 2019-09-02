@@ -359,6 +359,7 @@ button {
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   background: #fff;
+  z-index: 10;
 }
 
 button svg {
