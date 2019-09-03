@@ -14,11 +14,11 @@
 .tweetContainer {
   @include flex(column);
 
-    p {
-      padding-top: 20px;
-    }
+  p {
+    padding-top: 20px;
+  }
 
-    a{
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }

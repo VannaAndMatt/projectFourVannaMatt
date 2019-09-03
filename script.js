@@ -101,7 +101,7 @@ myApp.evalPromise = function(promise) {
       newQuote = newQuoteObj.value;
     }
 
-    // Error Handling 
+    // Error Handling
     // Check for unique quote
     let uniqueQuote = true;
     myApp.usedQuotes.forEach(function(item) {
@@ -142,9 +142,9 @@ myApp.userInput = function() {
     myApp.checkInput(selectedGuess);
 
     // Button Debouncing
-    $(".guess").attr("disabled", "disabled")
-    setTimeout(function(){ 
-      $(".guess").removeAttr("disabled")
+    $(".guess").attr("disabled", "disabled");
+    setTimeout(function() {
+      $(".guess").removeAttr("disabled");
     }, 500);
   });
 };
@@ -157,21 +157,21 @@ myApp.checkInput = function(selectedGuess) {
     myApp.score += 10;
     myApp.correctAnswers++;
     $(`.${selectedGuess}`)
-      .children('span')
-      .addClass('addScore')
-      .text('+10');
+      .children("span")
+      .addClass("addScore")
+      .text("+10");
     $(`.${selectedGuess}Image`)
       .children()
-      .addClass('animated bounce');
+      .addClass("animated bounce");
   } else {
     myApp.score -= 10;
     $(`.${selectedGuess}`)
-      .children('span')
-      .addClass('subtractScore')
-      .text('-10');
+      .children("span")
+      .addClass("subtractScore")
+      .text("-10");
     $(`.${selectedGuess}Image`)
       .children()
-      .addClass('animated shake');
+      .addClass("animated shake");
   }
 
   //If statement to end game once max questions are reached
@@ -181,17 +181,17 @@ myApp.checkInput = function(selectedGuess) {
   } else {
     myApp.getQuote();
   }
-  setTimeout(function(){ 
-    $('.guess')
-      .children('span')
-      .removeClass('subtractScore')
-      .removeClass('addScore')
-      .text('');
-    $('.headShots')
+  setTimeout(function() {
+    $(".guess")
+      .children("span")
+      .removeClass("subtractScore")
+      .removeClass("addScore")
+      .text("");
+    $(".headShots")
       .children()
-      .removeClass('animated')
-      .removeClass('bounce')
-      .removeClass('shake');
+      .removeClass("animated")
+      .removeClass("bounce")
+      .removeClass("shake");
   }, 1300);
 };
 

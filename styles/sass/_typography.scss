@@ -11,24 +11,15 @@ html {
 //====================
 h1 {
   @include fontStyle(8rem, 10rem, $main, $header, 900);
-  text-shadow: 
-    -1px -1px $secondary,
-    -2px -2px $secondary,
-    -3px -3px $secondary,
-    -4px -4px $secondary,
-    -5px -5px $tertiary,
-    -6px -6px $tertiary,
-    -7px -7px $tertiary,
-    -8px -8px $tertiary;
+  text-shadow: -1px -1px $secondary, -2px -2px $secondary, -3px -3px $secondary,
+    -4px -4px $secondary, -5px -5px $tertiary, -6px -6px $tertiary,
+    -7px -7px $tertiary, -8px -8px $tertiary;
 }
 
 h2 {
   @include fontStyle(4rem, 6rem, $main, $header);
   text-transform: uppercase;
-  text-shadow: 
-    -1px -1px $main,
-    -2px -2px $tertiary,
-    -3px -3px $tertiary,
+  text-shadow: -1px -1px $main, -2px -2px $tertiary, -3px -3px $tertiary,
     -4px -4px $tertiary;
 }
 
@@ -56,13 +47,8 @@ blockquote::before,
 blockquote::after {
   font-size: 12rem;
   color: $main;
-  text-shadow: 
-    1px 1px $secondary, 
-    2px 2px $secondary, 
-    3px 3px $secondary, 
-    -1px -1px $tertiary,
-    -2px -2px $tertiary,
-    -3px -3px $tertiary;
+  text-shadow: 1px 1px $secondary, 2px 2px $secondary, 3px 3px $secondary,
+    -1px -1px $tertiary, -2px -2px $tertiary, -3px -3px $tertiary;
 }
 
 button {
@@ -80,10 +66,7 @@ button {
 
 .currentScore {
   @include fontStyle(3.3rem, 4rem, $main, $header, 900);
-  text-shadow: 
-    -1px 1px $secondary,
-    -2px 2px $secondary,
-    -3px 3px $secondary;
+  text-shadow: -1px 1px $secondary, -2px 2px $secondary, -3px 3px $secondary;
 }
 
 i {

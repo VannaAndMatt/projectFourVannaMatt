@@ -26,7 +26,7 @@
   }
 
   footer {
-   font-size: 2rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
 
@@ -69,61 +69,46 @@
 
   @keyframes headExpand {
     from {
-      -webkit-filter: 
-        drop-shadow(5px -5px $secondary)
+      -webkit-filter: drop-shadow(5px -5px $secondary)
         drop-shadow(-5px 5px $tertiary);
-      filter: 
-        drop-shadow(5px -5px $secondary) 
-        drop-shadow(-5px 5px $tertiary);
+      filter: drop-shadow(5px -5px $secondary) drop-shadow(-5px 5px $tertiary);
     }
     to {
-      -webkit-filter: 
-        drop-shadow(10px -10px $secondary)
+      -webkit-filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
-      filter: 
-        drop-shadow(10px -10px $secondary) 
+      filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
     }
   }
-  
+
   @keyframes kanyeSpin {
     from {
       transform: rotate(0deg);
-      -webkit-filter: 
-        drop-shadow(5px -5px $secondary)
+      -webkit-filter: drop-shadow(5px -5px $secondary)
         drop-shadow(-5px 5px $tertiary);
-      filter: 
-        drop-shadow(5px -5px $secondary) 
-        drop-shadow(-5px 5px $tertiary);
+      filter: drop-shadow(5px -5px $secondary) drop-shadow(-5px 5px $tertiary);
     }
     to {
       transform: rotate(-360deg);
-      -webkit-filter: 
-        drop-shadow(10px -10px $secondary)
+      -webkit-filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
-      filter: 
-        drop-shadow(10px -10px $secondary) 
+      filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
     }
   }
-  
+
   @keyframes trumpSpin {
     from {
       transform: rotate(0deg);
-      -webkit-filter: 
-        drop-shadow(5px -5px $secondary)
+      -webkit-filter: drop-shadow(5px -5px $secondary)
         drop-shadow(-5px 5px $tertiary);
-      filter: 
-        drop-shadow(5px -5px $secondary) 
-        drop-shadow(-5px 5px $tertiary);
+      filter: drop-shadow(5px -5px $secondary) drop-shadow(-5px 5px $tertiary);
     }
     to {
       transform: rotate(360deg);
-      -webkit-filter: 
-        drop-shadow(10px -10px $secondary)
+      -webkit-filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
-      filter: 
-        drop-shadow(10px -10px $secondary) 
+      filter: drop-shadow(10px -10px $secondary)
         drop-shadow(-10px 10px $tertiary);
     }
   }
@@ -209,27 +194,30 @@
 
   @keyframes incorrectScoreFade {
     0% {
-      color: rgba($incorrect,1);
+      color: rgba($incorrect, 1);
       top: 0;
     }
-    15%, 45%, 65% {
-      color: rgba($incorrect,1);
+    15%,
+    45%,
+    65% {
+      color: rgba($incorrect, 1);
       top: 45px;
     }
     20% {
-      color: rgba($incorrect,1);
+      color: rgba($incorrect, 1);
       top: 55px;
     }
-    25%, 35% {
-      color: rgba($incorrect,1);
+    25%,
+    35% {
+      color: rgba($incorrect, 1);
       top: 35px;
     }
     30% {
-      color: rgba($incorrect,1);
+      color: rgba($incorrect, 1);
       top: 50px;
     }
     100% {
-      color: rgba($incorrect,0);
+      color: rgba($incorrect, 0);
       top: 45px;
     }
   }
@@ -292,7 +280,8 @@
     bottom: 25px;
   }
 
-  blockquote::before, blockquote::after {
+  blockquote::before,
+  blockquote::after {
     font-size: 9rem;
   }
 
@@ -310,63 +299,44 @@
 
   @keyframes headExpand {
     from {
-      -webkit-filter: 
-        drop-shadow(3px -3px $secondary)
+      -webkit-filter: drop-shadow(3px -3px $secondary)
         drop-shadow(-3px 3px $tertiary);
-      filter: 
-        drop-shadow(3px -3px $secondary) 
-        drop-shadow(-3px 3px $tertiary);
+      filter: drop-shadow(3px -3px $secondary) drop-shadow(-3px 3px $tertiary);
     }
     to {
-      -webkit-filter: 
-        drop-shadow(6px -6px $secondary)
+      -webkit-filter: drop-shadow(6px -6px $secondary)
         drop-shadow(-6px 6px $tertiary);
-      filter: 
-        drop-shadow(6px -6px $secondary) 
-        drop-shadow(-6px 6px $tertiary);
+      filter: drop-shadow(6px -6px $secondary) drop-shadow(-6px 6px $tertiary);
     }
   }
-  
+
   @keyframes kanyeSpin {
     from {
       transform: rotate(0deg);
-      -webkit-filter: 
-        drop-shadow(3px -3px $secondary)
+      -webkit-filter: drop-shadow(3px -3px $secondary)
         drop-shadow(-3px 3px $tertiary);
-      filter: 
-        drop-shadow(3px -3px $secondary) 
-        drop-shadow(-3px 3px $tertiary);
+      filter: drop-shadow(3px -3px $secondary) drop-shadow(-3px 3px $tertiary);
     }
     to {
       transform: rotate(-360deg);
-      -webkit-filter: 
-        drop-shadow(6px -6px $secondary)
+      -webkit-filter: drop-shadow(6px -6px $secondary)
         drop-shadow(-6px 6px $tertiary);
-      filter: 
-        drop-shadow(6px -6px $secondary) 
-        drop-shadow(-6px 6px $tertiary);
+      filter: drop-shadow(6px -6px $secondary) drop-shadow(-6px 6px $tertiary);
     }
   }
-  
+
   @keyframes trumpSpin {
     from {
       transform: rotate(0deg);
-      -webkit-filter: 
-        drop-shadow(3px -3px $secondary)
+      -webkit-filter: drop-shadow(3px -3px $secondary)
         drop-shadow(-3px 3px $tertiary);
-      filter: 
-        drop-shadow(3px -3px $secondary) 
-        drop-shadow(-3px 3px $tertiary);
+      filter: drop-shadow(3px -3px $secondary) drop-shadow(-3px 3px $tertiary);
     }
     to {
       transform: rotate(360deg);
-      -webkit-filter: 
-        drop-shadow(6px -6px $secondary)
+      -webkit-filter: drop-shadow(6px -6px $secondary)
         drop-shadow(-6px 6px $tertiary);
-      filter: 
-        drop-shadow(6px -6px $secondary) 
-        drop-shadow(-6px 6px $tertiary);
+      filter: drop-shadow(6px -6px $secondary) drop-shadow(-6px 6px $tertiary);
     }
   }
 } // end of 320px
-

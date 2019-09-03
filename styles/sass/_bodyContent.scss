@@ -40,7 +40,7 @@ main {
 }
 
 //====================
-// Quote and Score 
+// Quote and Score
 //====================
 .content {
   @include flex(column, space-between);
@@ -98,69 +98,61 @@ i:focus {
 //====================
 @keyframes headExpand {
   from {
-    -webkit-filter: 
-      drop-shadow(10px -10px $secondary)
+    -webkit-filter: drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: 
-      drop-shadow(10px -10px $secondary) 
-      drop-shadow(-10px 10px $tertiary);
+    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
   }
   to {
-    -webkit-filter: 
-      drop-shadow(25px -25px $secondary)
+    -webkit-filter: drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: 
-      drop-shadow(25px -25px $secondary) 
-      drop-shadow(-25px 25px $tertiary);
+    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
   }
 }
 
 @keyframes kanyeSpin {
   from {
     transform: rotate(0deg);
-    -webkit-filter: 
-      drop-shadow(10px -10px $secondary)
+    -webkit-filter: drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: 
-      drop-shadow(10px -10px $secondary) 
-      drop-shadow(-10px 10px $tertiary);
+    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
   }
   to {
     transform: rotate(-360deg);
-    -webkit-filter: 
-      drop-shadow(25px -25px $secondary)
+    -webkit-filter: drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: 
-      drop-shadow(25px -25px $secondary) 
-      drop-shadow(-25px 25px $tertiary);
+    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
   }
 }
 
 @keyframes trumpSpin {
   from {
     transform: rotate(0deg);
-    -webkit-filter: 
-      drop-shadow(10px -10px $secondary)
+    -webkit-filter: drop-shadow(10px -10px $secondary)
       drop-shadow(-10px 10px $tertiary);
-    filter: 
-      drop-shadow(10px -10px $secondary) 
-      drop-shadow(-10px 10px $tertiary);
+    filter: drop-shadow(10px -10px $secondary) drop-shadow(-10px 10px $tertiary);
   }
   to {
     transform: rotate(360deg);
-    -webkit-filter: 
-      drop-shadow(25px -25px $secondary)
+    -webkit-filter: drop-shadow(25px -25px $secondary)
       drop-shadow(-25px 25px $tertiary);
-    filter: 
-      drop-shadow(25px -25px $secondary) 
-      drop-shadow(-25px 25px $tertiary);
+    filter: drop-shadow(25px -25px $secondary) drop-shadow(-25px 25px $tertiary);
   }
 }
 
 @keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(-15deg); }
-  50% { transform: rotate(25deg); }
-  75% { transform: rotate(-15deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

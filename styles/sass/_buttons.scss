@@ -88,7 +88,7 @@ button {
   rect {
     stroke: $tertiary;
   }
-  
+
   &:hover,
   &:focus {
     rect {
@@ -102,55 +102,60 @@ button {
 //====================
 @keyframes correctScoreFade {
   0% {
-    color: rgba($correct,1);
+    color: rgba($correct, 1);
     top: 0;
   }
-  15%, 45%, 65% {
-    color: rgba($correct,1);
+  15%,
+  45%,
+  65% {
+    color: rgba($correct, 1);
     top: -50px;
   }
   20% {
-    color: rgba($correct,1);
+    color: rgba($correct, 1);
     top: -60px;
   }
-  25%, 35% {
-    color: rgba($correct,1);
+  25%,
+  35% {
+    color: rgba($correct, 1);
     top: -43px;
   }
   30% {
-    color: rgba($correct,1);
+    color: rgba($correct, 1);
     top: -55px;
   }
   100% {
-    color: rgba($correct,0);
+    color: rgba($correct, 0);
     top: -50px;
   }
 }
 
 @keyframes incorrectScoreFade {
   0% {
-    color: rgba($incorrect,1);
+    color: rgba($incorrect, 1);
     top: 0;
   }
-  15%, 45%, 65% {
-    color: rgba($incorrect,1);
+  15%,
+  45%,
+  65% {
+    color: rgba($incorrect, 1);
     top: 65px;
   }
   20% {
-    color: rgba($incorrect,1);
+    color: rgba($incorrect, 1);
     top: 75px;
   }
-  25%, 35% {
-    color: rgba($incorrect,1);
+  25%,
+  35% {
+    color: rgba($incorrect, 1);
     top: 55px;
   }
   30% {
-    color: rgba($incorrect,1);
+    color: rgba($incorrect, 1);
     top: 70px;
   }
   100% {
-    color: rgba($incorrect,0);
+    color: rgba($incorrect, 0);
     top: 65px;
   }
 }
-

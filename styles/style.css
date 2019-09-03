@@ -233,7 +233,7 @@ h1 {
   font-size: 8rem;
   line-height: 10rem;
   color: #fff;
-  text-shadow: -1px -1px #D83F87, -2px -2px #D83F87, -3px -3px #D83F87, -4px -4px #D83F87, -5px -5px #14A098, -6px -6px #14A098, -7px -7px #14A098, -8px -8px #14A098;
+  text-shadow: -1px -1px #d83f87, -2px -2px #d83f87, -3px -3px #d83f87, -4px -4px #d83f87, -5px -5px #14a098, -6px -6px #14a098, -7px -7px #14a098, -8px -8px #14a098;
 }
 
 h2 {
@@ -243,7 +243,7 @@ h2 {
   line-height: 6rem;
   color: #fff;
   text-transform: uppercase;
-  text-shadow: -1px -1px #fff, -2px -2px #14A098, -3px -3px #14A098, -4px -4px #14A098;
+  text-shadow: -1px -1px #fff, -2px -2px #14a098, -3px -3px #14a098, -4px -4px #14a098;
 }
 
 h3 {
@@ -283,7 +283,7 @@ blockquote::before,
 blockquote::after {
   font-size: 12rem;
   color: #fff;
-  text-shadow: 1px 1px #D83F87, 2px 2px #D83F87, 3px 3px #D83F87, -1px -1px #14A098, -2px -2px #14A098, -3px -3px #14A098;
+  text-shadow: 1px 1px #d83f87, 2px 2px #d83f87, 3px 3px #d83f87, -1px -1px #14a098, -2px -2px #14a098, -3px -3px #14a098;
 }
 
 button {
@@ -291,12 +291,12 @@ button {
   font-weight: 900;
   font-size: 2.2rem;
   line-height: 3.8rem;
-  color: #D83F87;
+  color: #d83f87;
   text-transform: uppercase;
 }
 
 button.trump {
-  color: #14A098;
+  color: #14a098;
 }
 
 .scoreChange {
@@ -313,7 +313,7 @@ button.trump {
   font-size: 3.3rem;
   line-height: 4rem;
   color: #fff;
-  text-shadow: -1px 1px #D83F87, -2px 2px #D83F87, -3px 3px #D83F87;
+  text-shadow: -1px 1px #d83f87, -2px 2px #d83f87, -3px 3px #d83f87;
 }
 
 i {
@@ -321,17 +321,17 @@ i {
   font-weight: 400;
   font-size: 4rem;
   line-height: 5rem;
-  color: #D83F87;
+  color: #d83f87;
 }
 
 .results .currentScore,
 .results .answers {
-  color: #D83F87;
+  color: #d83f87;
   text-shadow: none;
 }
 
 .finalScore {
-  color: #14A098;
+  color: #14a098;
 }
 
 .wrapper {
@@ -396,11 +396,11 @@ button:hover rect, button:focus rect {
 }
 
 .kanye rect {
-  stroke: #14A098;
+  stroke: #14a098;
 }
 
 .trump rect {
-  stroke: #D83F87;
+  stroke: #d83f87;
 }
 
 .scoreChange {
@@ -442,7 +442,7 @@ button:hover rect, button:focus rect {
 }
 
 .playAgain rect {
-  stroke: #14A098;
+  stroke: #14a098;
 }
 
 .playAgain:hover rect, .playAgain:focus rect {
@@ -454,7 +454,9 @@ button:hover rect, button:focus rect {
     color: #5ab471;
     top: 0;
   }
-  15%, 45%, 65% {
+  15%,
+  45%,
+  65% {
     color: #5ab471;
     top: -50px;
   }
@@ -462,7 +464,8 @@ button:hover rect, button:focus rect {
     color: #5ab471;
     top: -60px;
   }
-  25%, 35% {
+  25%,
+  35% {
     color: #5ab471;
     top: -43px;
   }
@@ -481,7 +484,9 @@ button:hover rect, button:focus rect {
     color: #5ab471;
     top: 0;
   }
-  15%, 45%, 65% {
+  15%,
+  45%,
+  65% {
     color: #5ab471;
     top: -50px;
   }
@@ -489,7 +494,8 @@ button:hover rect, button:focus rect {
     color: #5ab471;
     top: -60px;
   }
-  25%, 35% {
+  25%,
+  35% {
     color: #5ab471;
     top: -43px;
   }
@@ -508,7 +514,9 @@ button:hover rect, button:focus rect {
     color: #b10153;
     top: 0;
   }
-  15%, 45%, 65% {
+  15%,
+  45%,
+  65% {
     color: #b10153;
     top: 65px;
   }
@@ -516,7 +524,8 @@ button:hover rect, button:focus rect {
     color: #b10153;
     top: 75px;
   }
-  25%, 35% {
+  25%,
+  35% {
     color: #b10153;
     top: 55px;
   }
@@ -535,7 +544,9 @@ button:hover rect, button:focus rect {
     color: #b10153;
     top: 0;
   }
-  15%, 45%, 65% {
+  15%,
+  45%,
+  65% {
     color: #b10153;
     top: 65px;
   }
@@ -543,7 +554,8 @@ button:hover rect, button:focus rect {
     color: #b10153;
     top: 75px;
   }
-  25%, 35% {
+  25%,
+  35% {
     color: #b10153;
     top: 55px;
   }
@@ -708,23 +720,23 @@ i:focus {
 
 @-webkit-keyframes headExpand {
   from {
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
 @keyframes headExpand {
   from {
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
@@ -732,14 +744,14 @@ i:focus {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
@@ -747,14 +759,14 @@ i:focus {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
@@ -762,14 +774,14 @@ i:focus {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
@@ -777,14 +789,14 @@ i:focus {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-    filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+    -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+    filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
-    filter: drop-shadow(25px -25px #D83F87) drop-shadow(-25px 25px #14A098);
+    -webkit-filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
+    filter: drop-shadow(25px -25px #d83f87) drop-shadow(-25px 25px #14a098);
   }
 }
 
@@ -915,12 +927,12 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #D83F87;
+  color: #d83f87;
 }
 
 footer a:hover, footer a:focus {
   outline: none;
-  color: #14A098;
+  color: #14a098;
 }
 
 @media (min-width: 1450px) {
@@ -980,78 +992,78 @@ footer a:hover, footer a:focus {
   }
   @-webkit-keyframes headExpand {
     from {
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
   @keyframes headExpand {
     from {
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
   @-webkit-keyframes kanyeSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
       -webkit-transform: rotate(-360deg);
               transform: rotate(-360deg);
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
   @keyframes kanyeSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
       -webkit-transform: rotate(-360deg);
               transform: rotate(-360deg);
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
   @-webkit-keyframes trumpSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
   @keyframes trumpSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
-      filter: drop-shadow(5px -5px #D83F87) drop-shadow(-5px 5px #14A098);
+      -webkit-filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
+      filter: drop-shadow(5px -5px #d83f87) drop-shadow(-5px 5px #14a098);
     }
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-      -webkit-filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
-      filter: drop-shadow(10px -10px #D83F87) drop-shadow(-10px 10px #14A098);
+      -webkit-filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
+      filter: drop-shadow(10px -10px #d83f87) drop-shadow(-10px 10px #14a098);
     }
   }
 }
@@ -1124,7 +1136,9 @@ footer a:hover, footer a:focus {
       color: #b10153;
       top: 0;
     }
-    15%, 45%, 65% {
+    15%,
+    45%,
+    65% {
       color: #b10153;
       top: 45px;
     }
@@ -1132,7 +1146,8 @@ footer a:hover, footer a:focus {
       color: #b10153;
       top: 55px;
     }
-    25%, 35% {
+    25%,
+    35% {
       color: #b10153;
       top: 35px;
     }
@@ -1150,7 +1165,9 @@ footer a:hover, footer a:focus {
       color: #b10153;
       top: 0;
     }
-    15%, 45%, 65% {
+    15%,
+    45%,
+    65% {
       color: #b10153;
       top: 45px;
     }
@@ -1158,7 +1175,8 @@ footer a:hover, footer a:focus {
       color: #b10153;
       top: 55px;
     }
-    25%, 35% {
+    25%,
+    35% {
       color: #b10153;
       top: 35px;
     }
@@ -1229,7 +1247,8 @@ footer a:hover, footer a:focus {
   .headShots {
     bottom: 25px;
   }
-  blockquote::before, blockquote::after {
+  blockquote::before,
+  blockquote::after {
     font-size: 9rem;
   }
   blockquote::before {
@@ -1243,78 +1262,78 @@ footer a:hover, footer a:focus {
   }
   @-webkit-keyframes headExpand {
     from {
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
   @keyframes headExpand {
     from {
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
   @-webkit-keyframes kanyeSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
       -webkit-transform: rotate(-360deg);
               transform: rotate(-360deg);
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
   @keyframes kanyeSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
       -webkit-transform: rotate(-360deg);
               transform: rotate(-360deg);
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
   @-webkit-keyframes trumpSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
   @keyframes trumpSpin {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
-      -webkit-filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
-      filter: drop-shadow(3px -3px #D83F87) drop-shadow(-3px 3px #14A098);
+      -webkit-filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
+      filter: drop-shadow(3px -3px #d83f87) drop-shadow(-3px 3px #14a098);
     }
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-      -webkit-filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
-      filter: drop-shadow(6px -6px #D83F87) drop-shadow(-6px 6px #14A098);
+      -webkit-filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
+      filter: drop-shadow(6px -6px #d83f87) drop-shadow(-6px 6px #14a098);
     }
   }
 }
